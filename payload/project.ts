@@ -6,7 +6,7 @@ const project: IProject.Payload = {
     {
       title: '국립금오공과대학교 종합정보시스템 웹 개발',
       startedAt: '24-06-23',
-      endedAt: '25-01-22',
+      endedAt: '25-02-10',
       where: '(주)아카넷 서울지사',
       descriptions: [
         {
@@ -32,7 +32,7 @@ const project: IProject.Payload = {
           weight: 'MEDIUM',
           descriptions: [
             {
-              content: '별도 피드백 사이트를 통해 60건 이상의 개선 요청 사항 수집 및 처리',
+              content: '별도 피드백 사이트를 통해 40건 이상의 개선 요청 사항 수집 및 처리',
             },
             {
               content:
@@ -51,6 +51,15 @@ const project: IProject.Payload = {
             {
               content:
                 'SQL 최적화를 통해 강의평가결과 분석 데이터 처리 속도 개선(평균 응답 시간 20% 단축)',
+            },
+          ],
+        },
+        {
+          content: '[Skill Keywords]',
+          weight: 'MEDIUM',
+          descriptions: [
+            {
+              content: 'Java(8), JavaScript, Spring, Nexacro, Oracle, MyBatis, Eclipse(4.5), SVN',
             },
           ],
         },
@@ -195,8 +204,7 @@ const project: IProject.Payload = {
           weight: 'MEDIUM',
           descriptions: [
             {
-              content:
-                'Java(JDK 11.0.18), Spring(5.0.7), MySQL(8.0.21), MyBatis(3.3.1), JavaScript',
+              content: 'Java(11), JavaScript, Spring(5.0.7), MySQL, MyBatis, IntelliJ, Git',
             },
           ],
         },
@@ -314,8 +322,7 @@ const project: IProject.Payload = {
           weight: 'MEDIUM',
           descriptions: [
             {
-              content:
-                'Java(JDK 11.0.18), Spring(5.0.7), MySQL(8.0.21), MyBatis(3.3.1), JavaScript',
+              content: 'Java(11), JavaScript, Spring(5.0.7), MySQL, MyBatis, IntelliJ, Git',
             },
           ],
         },

@@ -15,7 +15,7 @@ const experience: IExperience.Payload = {
             '대학정보화 업무 프로세스 통합(SI) 및 패키지 기반 시스템 구축',
             '(Front-End / Back-End) 풀스택 개발',
           ],
-          skillKeywords: ['JAVA', 'javascript', 'Oracle', 'MyBatis', 'Spring', 'Nexacro'],
+          skillKeywords: ['JAVA', 'JavaScript', 'Spring', 'Nexacro', 'Oracle', 'MyBatis', 'SVN'],
         },
       ],
     },
