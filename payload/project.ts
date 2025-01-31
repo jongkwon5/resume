@@ -2,10 +2,11 @@ import { IProject } from '../component/project/IProject';
 
 const project: IProject.Payload = {
   disable: false,
+  disableTotalPeriod: false,
   list: [
     {
       title: '국립금오공과대학교 종합정보시스템 웹 개발',
-      startedAt: '24-06-23',
+      startedAt: '24-05-23',
       endedAt: '25-02-10',
       where: '(주)아카넷 서울지사',
       descriptions: [
