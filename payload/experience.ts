@@ -20,7 +20,7 @@ const experience: IExperience.Payload = {
       ],
     },
     {
-      title: '중앙정보처리학원원',
+      title: '중앙정보처리학원',
       positions: [
         {
           title: 'JAVA 기반 풀스택 개발자 취업 과정',
