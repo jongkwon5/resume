@@ -8,8 +8,9 @@ const experience: IExperience.Payload = {
       title: '(주)아카넷 서울지사',
       positions: [
         {
-          title: '웹 개발자',
+          title: '정보화사업본부 웹 개발자',
           startedAt: '2023-12',
+          endedAt: '2025-02',
           descriptions: [
             '국립금오공과대학교 종합정보시스템 웹 개발',
             '대학정보화 업무 프로세스 통합(SI) 및 패키지 기반 시스템 구축',
