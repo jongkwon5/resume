@@ -11,7 +11,7 @@ const education: IEducation.Payload = {
       endedAt: '22-08-22',
     },
     {
-      title: '청운대학교 뮤직트레이너학과(학사)',
+      title: '청운대학교 실용음악과(학사)',
       subTitle: '졸업 학점 (3.49 / 4.5)',
       startedAt: '13-03-01',
       endedAt: '19-02-13',

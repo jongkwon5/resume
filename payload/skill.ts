@@ -10,6 +10,9 @@ const pl: ISkill.Skill = {
       title: 'Spring',
     },
     {
+      title: 'MyBatis',
+    },
+    {
       title: 'JPA',
     },
   ],

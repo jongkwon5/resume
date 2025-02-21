@@ -22,7 +22,7 @@ const presentation: IPresentation.Payload = {
     {
       title: '1종대형운전면허',
       subTitle: '경찰청',
-      at: '16-04-14',
+      at: '16-05-14',
     },
     {
       title: '정보기술자격(ITQ) 인터넷 A등급 ',

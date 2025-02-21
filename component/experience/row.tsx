@@ -81,7 +81,7 @@ export default function ExperienceRow({
 
       {/* 각 Position을 최신 순으로 반복하여 개별 재직 기간과 직책 표시 */}
       {sortedPositions.map((position, posIndex) => (
-        <Row key={posIndex.toString()} className="mt-2">
+        <Row key={posIndex.toString()} className="mt-0">
           <Col sm={12} md={3} className="text-md-right">
             {/* positions가 1개 이상일 때만 Position의 재직 기간 표시 */}
             {hasMultiplePositions && (
