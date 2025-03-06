@@ -23,9 +23,6 @@ const project: IProject.Payload = {
               content:
                 ' 총 85개의 화면을 개발(기존 55개 대비 52% 증가)하여 시스템 확장 및 사용자 요구사항 반영',
             },
-            {
-              content: '주당 평균 2.5개 화면 제작, 프로젝트 일정 내 모든 작업 완료',
-            },
           ],
         },
         {
@@ -36,11 +33,24 @@ const project: IProject.Payload = {
               content: '별도 피드백 사이트를 통해 40건 이상의 개선 요청 사항 수집 및 반영',
             },
             {
-              content: '초과 수업료 산정 시 예외 처리 로직을 추가하여 강사료 계산의 정확도 개선',
-            },
-            {
               content:
                 '시간표 조회 시 요일 및 시간대별 필터링 기능을 추가하여 학생 사용 편의성 개선',
+            },
+            {
+              content: '초과 수업료 산정 시 예외 처리 로직을 추가하여 강사료 계산의 정확도 개선',
+              descriptions: [
+                {
+                  content:
+                    '기존 강사료 계산 로직에서 교강사(외부 강사/내부 교직원) 구분이 명확하지 않아, 초과 수업료 산정 시 오류 발생',
+                },
+                {
+                  content:
+                    'SQL 서브쿼리 및 테이블 JOIN을 활용하여 강사 정보 조회 시 내부 교직원 여부와 보직 정보를 함께 반영하도록 개선',
+                },
+                {
+                  content: 'CASE WHEN 및 서브쿼리를 활용하여 교직원 여부 및 보직 외 시수를 반영',
+                },
+              ],
             },
           ],
         },
@@ -51,6 +61,19 @@ const project: IProject.Payload = {
             {
               content:
                 'SQL 최적화를 통해 강의평가결과 분석 데이터 처리 속도 개선(평균 응답 시간 20% 단축)',
+              descriptions: [
+                {
+                  content:
+                    '기존 모든 조회가 LEFT OUTER JOIN 기반으로 이루어져, 데이터 처리 시간이 길어지는 문제가 발생',
+                },
+                {
+                  content: 'WITH 절을 활용하여 사전 데이터 가공 후 조회하도록 개선',
+                },
+                {
+                  content:
+                    '불필요한 반복 JOIN을 줄이고 단일 WITH에서 필요한 데이터만 추출하여 성능 최적화',
+                },
+              ],
             },
           ],
         },
@@ -59,7 +82,8 @@ const project: IProject.Payload = {
           weight: 'MEDIUM',
           descriptions: [
             {
-              content: 'Java(8), JavaScript, Spring, Nexacro, Oracle, MyBatis, Eclipse(4.5), SVN',
+              content:
+                'Java(8), JavaScript, Spring, Oracle, MyBatis, exBuilder6, Eclipse(4.5), SVN',
             },
           ],
         },

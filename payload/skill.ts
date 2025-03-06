@@ -67,7 +67,7 @@ const tool: ISkill.Skill = {
       title: 'VScode',
     },
     {
-      title: 'Nexacro',
+      title: 'exBuilder6',
     },
   ],
 };
