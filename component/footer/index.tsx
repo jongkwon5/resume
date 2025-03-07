@@ -24,7 +24,7 @@ function Component({ payload }: PropsWithChildren<{ payload: IFooter.Payload }>)
               {payload.aa}
               {/* Github 주소는 origin repository 의 주소를 넣는다. */}
               <HrefTargetBlank
-                url="https://drive.google.com/file/d/1KRV8xBh6MJlp5c9Lh7t5TvANMd0_bf1L/view?usp=sharing"
+                url="https://drive.google.com/file/d/1dD29Gv5V8updiNL_gyvJKX-6KTNfP1bt/view?usp=sharing"
                 text="포트폴리오 링크"
               />
             </>
