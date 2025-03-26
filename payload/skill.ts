@@ -28,6 +28,9 @@ const devops: ISkill.Skill = {
       title: 'JavaScript',
     },
     {
+      title: 'jQuery',
+    },
+    {
       title: 'HTML/CSS',
     },
   ],
