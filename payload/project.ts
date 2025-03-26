@@ -20,8 +20,7 @@ const project: IProject.Payload = {
           weight: 'MEDIUM',
           descriptions: [
             {
-              content:
-                ' 총 85개의 화면을 개발(기존 55개 대비 52% 증가)하여 시스템 확장 및 사용자 요구사항 반영',
+              content: ' 총 85개의 화면을 신규 개발하며, 기존 55개 화면 대비 52% 확장',
             },
           ],
         },
@@ -33,11 +32,16 @@ const project: IProject.Payload = {
               content: '별도 피드백 사이트를 통해 40건 이상의 개선 요청 사항 수집 및 반영',
             },
             {
-              content:
-                '시간표 조회 시 요일 및 시간대별 필터링 기능을 추가하여 학생 사용 편의성 개선',
+              content: '학생 시간표 조회 기능 개선',
+              descriptions: [
+                {
+                  content:
+                    '기존 시간표 조회 방식에서 요일 및 시간대별 필터링 기능을 추가하여 학생 사용 편의성을 향상',
+                },
+              ],
             },
             {
-              content: '초과 수업료 산정 시 예외 처리 로직을 추가하여 강사료 계산의 정확도 개선',
+              content: '강사료 계산 로직 개선',
               descriptions: [
                 {
                   content:
