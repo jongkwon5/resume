@@ -17,15 +17,15 @@ function Component({ payload }: PropsWithChildren<{ payload: IFooter.Payload }>)
             <>
               {payload.aa}
               {/* Github 주소는 origin repository 의 주소를 넣는다. */}
-              <HrefTargetBlank url="https://jongkwon5.github.io/resume" text="이력서 링크" />
+              <HrefTargetBlank url="https://jongkwon5.github.io/resume" text="이력서 링크 " />
             </>
             /
             <>
               {payload.aa}
               {/* Github 주소는 origin repository 의 주소를 넣는다. */}
               <HrefTargetBlank
-                url="https://drive.google.com/file/d/1dD29Gv5V8updiNL_gyvJKX-6KTNfP1bt/view?usp=sharing"
-                text="포트폴리오 링크"
+                url="https://drive.google.com/file/d/1-zKsMKU03vWw3vGDpC7ONrLNeDq25ngf/view?usp=drive_link"
+                text=" 포트폴리오 링크"
               />
             </>
           </EmptyRowCol>
