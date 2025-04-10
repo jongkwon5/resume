@@ -15,7 +15,7 @@ const presentation: IPresentation.Payload = {
       at: '23-07-15',
     },
     {
-      title: '중등학교정교사',
+      title: '중등학교정교사 2급',
       subTitle: '교육인적자원부',
       at: '22-08-08',
     },
@@ -35,7 +35,7 @@ const presentation: IPresentation.Payload = {
       at: '06-11-09',
     },
     {
-      title: '컴퓨터활용능력2급  ',
+      title: '컴퓨터활용능력 2급  ',
       subTitle: '대한상공회의소',
       at: '06-08-08',
     },
@@ -50,7 +50,7 @@ const presentation: IPresentation.Payload = {
       at: '05-01-11',
     },
     {
-      title: '워드프로세서1급 ',
+      title: '워드프로세서 1급 ',
       subTitle: '대한상공회의소',
       at: '04-12-17',
     },

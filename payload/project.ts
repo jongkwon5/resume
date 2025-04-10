@@ -5,7 +5,7 @@ const project: IProject.Payload = {
   disableTotalPeriod: false,
   list: [
     {
-      title: '국립금오공과대학교 종합정보시스템 웹 개발',
+      title: '국립 금오공과대학교 종합정보시스템 웹 개발',
       startedAt: '24-05-23',
       endedAt: '25-02-10',
       where: '(주)아카넷 서울지사',
@@ -16,7 +16,7 @@ const project: IProject.Payload = {
             'https://github.com/user-attachments/assets/9cc6fd68-9432-4e88-9903-f4432c3dce59',
         },
         {
-          content: '종합정보시스템 내 학사 및 강사료 관리 화면 풀스택 개발',
+          content: '종합정보시스템 학사(수업) 및 강사료 관리 파트 풀스택 개발',
           weight: 'MEDIUM',
           descriptions: [
             {
@@ -119,10 +119,10 @@ const project: IProject.Payload = {
       ],
     },
     {
-      title: '지역 축제 소개를 토대로 여행 파트너를 구할 수 있는 서비스 - TT',
+      title: '전국 지역 축제 소개 및 축제 동행 매칭 서비스 - TT',
       startedAt: '23-07-25',
       endedAt: '23-09-03',
-      where: '5인 팀 프로젝트 [담당 : 메인 페이지/채팅방 목록/실시간 채팅 풀스택 개발]',
+      where: '5인 팀 프로젝트 [담당 - 메인 페이지/채팅방 목록/실시간 채팅 풀스택 개발]',
       descriptions: [
         {
           content: '',
