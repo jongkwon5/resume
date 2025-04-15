@@ -4,7 +4,7 @@
 ## [🗒️이력서 링크🗒️](https://jongkwon5.github.io/resume)
 
 ### History
-- 2025.02.21 : 이력서 업데이트
+- 2025.04.16 : 이력서 업데이트
 - 2023.09.25 : 이력서 초안 완성
 
 ### Tips
@@ -13,3 +13,4 @@
 
 ### Reference
 - https://github.com/uyu423/resume-nextjs
+- https://wnjoon.github.io/resume/

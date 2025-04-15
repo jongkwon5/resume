@@ -116,6 +116,10 @@ const project: IProject.Payload = {
             },
           ],
         },
+        {
+          content: 'Website : https://onekit.kumoh.ac.kr',
+          href: 'https://onekit.kumoh.ac.kr',
+        },
       ],
     },
     {
