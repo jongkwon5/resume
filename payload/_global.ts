@@ -1,5 +1,5 @@
 import favicon from '../asset/favicon.ico';
-import previewImage from '../asset/profile.jpg';
+import previewImage from '../asset/profile_2.jpg';
 import { IGlobal } from '../component/common/IGlobal';
 
 const title = 'Jongkwon Park - Resume page';

@@ -18,7 +18,10 @@ export const Introduce = {
 };
 
 function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
-  const latestUpdated = DateTime.local();
+  const latestUpdated = DateTime.fromFormat(
+    payload.latestUpdated,
+    Util.LUXON_DATE_FORMAT.YYYY_LL_DD,
+  );
   const latestUpdatedByNow = Math.floor(
     DateTime.local().diff(latestUpdated).milliseconds / 1000 / 60 / 60 / 24,
   );
