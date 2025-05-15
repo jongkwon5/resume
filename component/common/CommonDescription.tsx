@@ -131,6 +131,7 @@ const imgStyle: CSSProperties = {
   marginLeft: '-1.2em',
 };
 const aaa: CSSProperties = {
+  height: 'auto', // 비율 유지하며 높이 자동
   maxHeight: '19.4rem',
   minWidth: '40rem',
   listStyle: 'none',
