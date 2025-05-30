@@ -15,10 +15,13 @@ const pl: ISkill.Skill = {
     {
       title: 'JPA',
     },
+    {
+      title: 'JSP',
+    },
   ],
 };
 
-const devops: ISkill.Skill = {
+const Front: ISkill.Skill = {
   category: 'Front-end',
   items: [
     {
@@ -36,11 +39,14 @@ const devops: ISkill.Skill = {
   ],
 };
 
-const env: ISkill.Skill = {
+const DB: ISkill.Skill = {
   category: 'Database',
   items: [
     {
       title: 'Oracle',
+    },
+    {
+      title: 'MongoDB',
     },
     {
       title: 'MySQL',
@@ -48,26 +54,26 @@ const env: ISkill.Skill = {
   ],
 };
 
-const tool: ISkill.Skill = {
-  category: 'Etc',
+const devops: ISkill.Skill = {
+  category: 'DevOps & CI/CD',
   items: [
     {
-      title: 'Git/Github',
+      title: 'Jenkins',
     },
     {
-      title: 'SVN',
+      title: 'GitLab',
     },
-    {
-      title: 'Notion',
-    },
-    {
-      title: 'Eclipse',
-    },
+  ],
+};
+
+const tool: ISkill.Skill = {
+  category: 'IDE & Tool',
+  items: [
     {
       title: 'IntelliJ',
     },
     {
-      title: 'Tomcat',
+      title: 'Eclipse',
     },
     {
       title: 'VScode',
@@ -78,9 +84,24 @@ const tool: ISkill.Skill = {
   ],
 };
 
+const etc: ISkill.Skill = {
+  category: 'Etc',
+  items: [
+    {
+      title: 'Git/Github',
+    },
+    {
+      title: 'SVN',
+    },
+    {
+      title: 'Tomcat',
+    },
+  ],
+};
+
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [pl, devops, env, tool],
+  skills: [pl, Front, DB, devops, tool, etc],
 };
 
 export default skill;

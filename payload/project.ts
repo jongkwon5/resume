@@ -44,23 +44,16 @@ const project: IProject.Payload = {
               descriptions: [
                 {
                   content:
-                    '기존 시간표 조회 방식에서 요일 및 시간대별 필터링 기능을 추가하여 학생 사용 편의성을 향상',
+                    '요일/시간대 필터 기능 신규 도입 → 조회 UI 개선 및 학생 사용 편의성 향상',
                 },
               ],
             },
             {
-              content: '강사료 계산 로직 개선',
+              content: '강사료 계산 정확도 향상',
               descriptions: [
                 {
                   content:
-                    '기존 강사료 계산 로직에서 교강사(외부 강사/내부 교직원) 구분이 명확하지 않아 초과 수업료 산정 시 오류 발생',
-                },
-                {
-                  content:
-                    '서브쿼리 및 JOIN 활용으로 강사 정보 조회 시 교직원 여부 및 보직 정보를 반영하여 정확도 향상',
-                },
-                {
-                  content: 'CASE WHEN 및 서브쿼리 적용하여 초과 시수 반영 방식 개선',
+                    '강사 구분 및 시수 반영 오류 발생 → CASE문 및 서브쿼리 적용으로 계산 정확도 향상',
                 },
               ],
             },
@@ -71,7 +64,8 @@ const project: IProject.Payload = {
           weight: 'MEDIUM',
           descriptions: [
             {
-              content: '강의평가결과 분석 속도 20% 단축',
+              content:
+                '50만 건 이상의 강의평가결과 데이터를 처리하며 분석 속도 20% 단축 (10초 이상 → 7초 이내)',
               descriptions: [
                 {
                   content: '기존 LEFT OUTER JOIN 방식으로 인해 조회 속도 저하 문제 발생',
