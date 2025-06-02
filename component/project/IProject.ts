@@ -46,6 +46,8 @@ export declare namespace IProject {
      */
     descriptions: IRow.Description[];
 
+    skillKeywords?: string[];
+
     img?: string;
   }
 }

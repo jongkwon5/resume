@@ -1,3 +1,4 @@
+import { Badge } from 'reactstrap';
 import { DateTime } from 'luxon';
 import { PropsWithChildren } from 'react';
 import { IProject } from './IProject';
@@ -17,16 +18,19 @@ export default function ProjectRow({ payload }: PropsWithChildren<{ payload: IPr
 }
 
 function serialize(payload: IProject.Item): IRow.Payload {
-  const DATE_FORMAT = Util.LUXON_DATE_FORMAT;
-  const startedAt = DateTime.fromFormat(payload.startedAt, DATE_FORMAT.YY_LL_DD).toFormat(
-    DATE_FORMAT.YYYY_DOT_LL,
-  );
+  const startedAtDate = DateTime.fromFormat(payload.startedAt, 'yy-LL-dd');
+  const endedAtDate = payload.endedAt
+    ? DateTime.fromFormat(payload.endedAt, 'yy-LL-dd')
+    : DateTime.local();
 
-  const title = (() => {
+  const duration = Util.getFormattingDuration(startedAtDate, endedAtDate);
+
+  const DATE_FORMAT = Util.LUXON_DATE_FORMAT;
+  const startedAt = startedAtDate.toFormat(DATE_FORMAT.YYYY_DOT_LL);
+
+  const leftTitle = (() => {
     if (payload.endedAt) {
-      const endedAt = DateTime.fromFormat(payload.endedAt, DATE_FORMAT.YY_LL_DD).toFormat(
-        DATE_FORMAT.YYYY_DOT_LL,
-      );
+      const endedAt = endedAtDate.toFormat(DATE_FORMAT.YYYY_DOT_LL);
       return `${startedAt} ~ ${endedAt}`;
     }
     return `${startedAt} ~`;
@@ -34,10 +38,19 @@ function serialize(payload: IProject.Item): IRow.Payload {
 
   return {
     left: {
-      title,
+      title: leftTitle,
     },
     right: {
-      title: payload.title,
+      title: (
+        <span style={{ display: 'inline-flex', alignItems: 'center' }}>
+          {payload.title}
+          <span style={{ fontSize: '65%', display: 'inline-flex', alignItems: 'center' }}>
+            <Badge color="info" className="ml-1">
+              {duration}
+            </Badge>
+          </span>
+        </span>
+      ),
       subTitle: payload.where,
       descriptions: payload.descriptions,
       img: payload.img,

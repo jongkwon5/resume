@@ -1,10 +1,10 @@
 import { Badge, Col, Row } from 'reactstrap';
-
 import { DateTime } from 'luxon';
 import { PropsWithChildren } from 'react';
 import { IExperience } from './IExperience';
 import { Style } from '../common/Style';
 import Util from '../common/Util';
+import { IRow } from '../common/IRow';
 
 type PositionWithDates = IExperience.Position & {
   startedAtDate: DateTime;
@@ -83,7 +83,6 @@ export default function ExperienceRow({
       {sortedPositions.map((position, posIndex) => (
         <Row key={posIndex.toString()} className="mt-0">
           <Col sm={12} md={3} className="text-md-right">
-            {/* positions가 1개 이상일 때만 Position의 재직 기간 표시 */}
             {hasMultiplePositions && (
               <span style={Style.gray}>
                 {createWorkingPeriod(position.startedAtDate, position.endedAtDate)}
@@ -93,9 +92,7 @@ export default function ExperienceRow({
           <Col sm={12} md={9}>
             <i style={Style.gray}>{position.title}</i>
             <ul className="pt-2">
-              {position.descriptions.map((description, descIndex) => (
-                <li key={descIndex.toString()}>{description}</li>
-              ))}
+              {renderDescriptions(position.descriptions)}
               {createSkillKeywords(position.skillKeywords)}
             </ul>
           </Col>
@@ -161,4 +158,23 @@ function createWorkingPeriod(startedAt: DateTime, endedAt?: DateTime | null) {
   }
 
   return `${startedAt.toFormat(DATE_FORMAT)} ~ ${endedAt.toFormat(DATE_FORMAT)}`;
+}
+
+function renderDescriptions(descriptions: Array<string | IRow.Description>) {
+  return descriptions.map((desc, index) => {
+    if (typeof desc === 'string') {
+      // eslint-disable-next-line react/no-array-index-key
+      return <li key={index}>{desc}</li>;
+    }
+
+    return (
+      // eslint-disable-next-line react/no-array-index-key
+      <li key={index}>
+        {desc.content}
+        {desc.descriptions && desc.descriptions.length > 0 && (
+          <ul>{renderDescriptions(desc.descriptions)}</ul>
+        )}
+      </li>
+    );
+  });
 }

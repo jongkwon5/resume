@@ -1,4 +1,6 @@
+/* eslint-disable react/no-array-index-key */
 import { PropsWithChildren, CSSProperties } from 'react';
+import { Badge } from 'reactstrap';
 import { IRow } from './IRow';
 import { HrefTargetBlank } from '.';
 
@@ -60,13 +62,14 @@ function DescriptionRecursion({
 }
 
 function Description({ description }: PropsWithChildren<{ description: IRow.Description }>) {
-  const { content, href, postImage, postHref, weight } = description;
+  const { content, href, postImage, postHref, weight, skillKeywords } = description;
 
   const component = (() => {
     if (href && postImage) {
       return (
         <li style={getFontWeight(weight)}>
           <HrefTargetBlank url={href} text={content} /> <img src={postImage} alt={postImage} />
+          {renderSkillKeywords(skillKeywords)}
         </li>
       );
     }
@@ -74,6 +77,7 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
       return (
         <li style={getFontWeight(weight)}>
           <HrefTargetBlank url={href} text={content} />
+          {renderSkillKeywords(skillKeywords)}
         </li>
       );
     }
@@ -82,6 +86,7 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
         <li style={getFontWeight(weight)}>
           {content} <HrefTargetBlank url={postHref} text={postHref} />{' '}
           <img src={postImage} alt={postImage} />
+          {renderSkillKeywords(skillKeywords)}
         </li>
       );
     }
@@ -89,6 +94,7 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
       return (
         <li style={getFontWeight(weight)}>
           {content} <HrefTargetBlank url={postHref} text={postHref} />
+          {renderSkillKeywords(skillKeywords)}
         </li>
       );
     }
@@ -99,10 +105,31 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
         </li>
       );
     }
-    return <li style={getFontWeight(weight)}>{content}</li>;
+    return (
+      <li style={getFontWeight(weight)}>
+        {content}
+        {renderSkillKeywords(skillKeywords)}
+      </li>
+    );
   })();
 
   return component;
+}
+
+// 🔥 skillKeywords 렌더링 함수
+function renderSkillKeywords(skillKeywords?: string[]) {
+  if (!skillKeywords || skillKeywords.length === 0) {
+    return null;
+  }
+  return (
+    <div>
+      {skillKeywords.map((keyword, index) => (
+        <Badge key={index} color="secondary" className="mr-1" style={{ fontWeight: 400 }}>
+          {keyword}
+        </Badge>
+      ))}
+    </div>
+  );
 }
 
 function getFontWeight(weight?: IRow.Description['weight']): CSSProperties {
@@ -121,22 +148,25 @@ const fontWeight: Record<IRow.FontWeightType, number> = {
   LIGHT: 300,
   REGULAR: 300,
   MEDIUM: 500,
-  // BOLD: 700,
+  BOLDER: 700,
   BOLD: 500,
 };
 const imgStyle: CSSProperties = {
   maxHeight: '20rem',
-  minWidth: '38rem',
+  width: '100%',
+  height: 'auto',
+  maxWidth: '60em',
   listStyle: 'none',
   marginLeft: '-1.2em',
 };
 const aaa: CSSProperties = {
-  height: 'auto', // 비율 유지하며 높이 자동
+  height: 'auto',
   maxHeight: '19.4rem',
-  minWidth: '40rem',
+  width: '100%',
+  maxWidth: '40rem',
   listStyle: 'none',
   marginLeft: '-1.2em',
   border: '2px solid grey',
-  marginBottom: '26rem',
+  marginBottom: '1rem',
   marginTop: '2px',
 };

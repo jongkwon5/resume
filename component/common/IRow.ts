@@ -12,9 +12,10 @@ export declare namespace IRow {
   }
 
   export interface Right {
-    title?: string;
+    title?: string | React.ReactNode;
     subTitle?: string;
     descriptions?: Description[];
+    skillKeywords?: string[];
     img?: string;
   }
 
@@ -75,5 +76,5 @@ export declare namespace IRow {
     icon?: IconDefinition;
   }
 
-  export type FontWeightType = 'DEFAULT' | 'LIGHT' | 'REGULAR' | 'MEDIUM' | 'BOLD';
+  export type FontWeightType = 'DEFAULT' | 'LIGHT' | 'REGULAR' | 'MEDIUM' | 'BOLD' | 'BOLDER';
 }

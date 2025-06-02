@@ -6,7 +6,7 @@ const project: IProject.Payload = {
   list: [
     {
       title: '국립 금오공과대학교 종합정보시스템 웹 개발',
-      startedAt: '24-05-23',
+      startedAt: '24-05-01',
       endedAt: '25-02-10',
       where: '(주)아카넷 서울지사',
       descriptions: [
@@ -101,13 +101,17 @@ const project: IProject.Payload = {
           ],
         },
         {
-          content: '[Skill Keywords]',
-          weight: 'MEDIUM',
-          descriptions: [
-            {
-              content:
-                'Java(8), JavaScript, Spring, Oracle, MyBatis, exBuilder6, Eclipse(4.5), SVN',
-            },
+          weight: 'BOLDER',
+          content: 'Skill Keywords',
+          skillKeywords: [
+            'Java',
+            'JavaScript',
+            'Spring',
+            'Oracle',
+            'MyBatis',
+            'exBuilder6',
+            'Eclipse',
+            'SVN',
           ],
         },
         {
@@ -117,7 +121,7 @@ const project: IProject.Payload = {
       ],
     },
     {
-      title: '전국 지역 축제 소개 및 축제 동행 매칭 서비스 - TT',
+      title: '전국 축제 소개 & 동행 매칭 플랫폼 - TT',
       startedAt: '23-07-25',
       endedAt: '23-09-03',
       where: '5인 팀 프로젝트 [담당 - 메인 페이지/채팅방 목록/실시간 채팅 풀스택 개발]',
@@ -161,7 +165,7 @@ const project: IProject.Payload = {
               descriptions: [
                 {
                   content:
-                    '사용자가 입장 또는 퇴장할 때 서버에서 해당 정보를 감지하고, 모든 참여자에게 실시간으로 알림을 보냅니다.',
+                    '사용자가 입/퇴장시 서버에서 해당 정보를 감지하고, 모든 참여자에게 실시간으로 알림을 보냅니다.',
                 },
               ],
             },
@@ -239,12 +243,16 @@ const project: IProject.Payload = {
           ],
         },
         {
-          content: '[Skill Keywords]',
-          weight: 'MEDIUM',
-          descriptions: [
-            {
-              content: 'Java(11), JavaScript, Spring(5.0.7), MySQL, MyBatis, IntelliJ, Git',
-            },
+          weight: 'BOLDER',
+          content: 'Skill Keywords',
+          skillKeywords: [
+            'Java',
+            'JavaScript',
+            'Spring',
+            'MySQL',
+            'MyBatis',
+            'Git/Github',
+            'IntelliJ',
           ],
         },
         {
@@ -361,12 +369,16 @@ const project: IProject.Payload = {
           ],
         },
         {
-          content: '[Skill Keywords]',
-          weight: 'MEDIUM',
-          descriptions: [
-            {
-              content: 'Java(11), JavaScript, Spring(5.0.7), MySQL, MyBatis, IntelliJ, Git',
-            },
+          weight: 'BOLDER',
+          content: 'Skill Keywords',
+          skillKeywords: [
+            'Java',
+            'JavaScript',
+            'Spring',
+            'MySQL',
+            'MyBatis',
+            'Git/Github',
+            'IntelliJ',
           ],
         },
         {
