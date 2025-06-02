@@ -78,7 +78,6 @@ export default function ExperienceRow({
           </h4>
         </Col>
       </Row>
-
       {/* 각 Position을 최신 순으로 반복하여 개별 재직 기간과 직책 표시 */}
       {sortedPositions.map((position, posIndex) => (
         <Row key={posIndex.toString()} className="mt-0">

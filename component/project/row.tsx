@@ -42,14 +42,14 @@ function serialize(payload: IProject.Item): IRow.Payload {
     },
     right: {
       title: (
-        <span style={{ display: 'inline-flex', alignItems: 'center' }}>
-          {payload.title}
+        <h4 style={{ display: '', alignItems: 'center' }}>
+          {payload.title}{' '}
           <span style={{ fontSize: '65%', display: 'inline-flex', alignItems: 'center' }}>
             <Badge color="info" className="ml-1">
               {duration}
             </Badge>
           </span>
-        </span>
+        </h4>
       ),
       subTitle: payload.where,
       descriptions: payload.descriptions,
