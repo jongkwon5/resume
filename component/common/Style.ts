@@ -49,8 +49,6 @@ export const Style: Record<TStyleKey, CSSProperties> = {
 
   footerCover: {
     backgroundColor: '#f5f5f5',
-    paddingLeft: 0,
-    paddingRight: 0,
     paddingBottom: 0,
     marginTop: '50px',
     marginBottom: '0px',
@@ -59,6 +57,7 @@ export const Style: Record<TStyleKey, CSSProperties> = {
   },
 
   footer: {
+    width: '100%',
     // paddingTop: '10px',
   },
 
