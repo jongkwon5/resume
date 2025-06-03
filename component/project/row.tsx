@@ -42,10 +42,17 @@ function serialize(payload: IProject.Item): IRow.Payload {
     },
     right: {
       title: (
-        <h4 style={{ display: 'flex', alignItems: 'center' }}>
+        <h4 style={{ alignItems: 'center' }}>
           {payload.title}{' '}
-          <span style={{ fontSize: '65%', display: 'inline-flex', alignItems: 'center' }}>
-            <Badge color="info" className="ml-1">
+          <span
+            style={{
+              fontSize: '65%',
+              display: 'inline-flex',
+              alignItems: 'center',
+              verticalAlign: 'middle',
+            }}
+          >
+            <Badge color="info" className="ml-0" style={{ position: 'relative', top: '-2px' }}>
               {duration}
             </Badge>
           </span>

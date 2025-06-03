@@ -50,7 +50,7 @@ export const Style: Record<TStyleKey, CSSProperties> = {
   footerCover: {
     backgroundColor: '#f5f5f5',
     marginBottom: '0px',
-    marginTop: '40px',
+    marginTop: '50px',
     height: '70px',
     fontSize: '1.1em',
   },
