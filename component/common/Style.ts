@@ -49,16 +49,15 @@ export const Style: Record<TStyleKey, CSSProperties> = {
 
   footerCover: {
     backgroundColor: '#f5f5f5',
-    paddingBottom: 0,
-    marginTop: '50px',
     marginBottom: '0px',
+    marginTop: '40px',
     height: '70px',
     fontSize: '1.1em',
   },
 
   footer: {
     width: '100%',
-    // paddingTop: '10px',
+    lineHeight: '24px',
   },
 
   skillKeywordBadge: {
