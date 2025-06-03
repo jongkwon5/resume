@@ -1,6 +1,6 @@
 import { ICommon } from '../common/ICommon';
 
-export declare namespace IPresentation {
+export declare namespace ICertification {
   /**
    * ### Sample Rendering
    *

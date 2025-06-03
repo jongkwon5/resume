@@ -4,9 +4,10 @@ import skill from './skill';
 import experience from './experience';
 import openSource from './openSource';
 import project from './project';
-import presentation from './certification';
+import sideproject from './sideproject';
 import education from './education';
 import article from './article';
+import certification from './certification';
 import etc from './etc';
 import footer from './footer';
 
@@ -18,7 +19,8 @@ import { ISkill } from '../component/skill/ISkill';
 import { IOpenSource } from '../component/openSource/IOpenSource';
 import { IExperience } from '../component/experience/IExperience';
 import { IProject } from '../component/project/IProject';
-import { IPresentation } from '../component/certification/IPresentation';
+import { ISideProject } from '../component/sideproject/ISideProject';
+import { ICertification } from '../component/certification/ICertification';
 import { IEducation } from '../component/education/IEducation';
 import { IEtc } from '../component/etc/IEtc';
 import { IFooter } from '../component/footer/IFooter';
@@ -32,9 +34,11 @@ const Payload: Payload = {
   openSource,
   experience,
   project,
-  presentation,
+  sideproject,
+  // presentation,
   article,
   education,
+  certification,
   etc,
   footer,
   _global,
@@ -47,12 +51,13 @@ interface Payload {
   openSource: IOpenSource.Payload;
   experience: IExperience.Payload;
   project: IProject.Payload;
-  presentation: IPresentation.Payload;
+  sideproject: ISideProject.Payload;
+  // presentation: ICertification.Payload;
   education: IEducation.Payload;
   article: IArticle.Payload;
   etc: IEtc.Payload;
   footer: IFooter.Payload;
-
+  certification: ICertification.Payload;
   _global: IGlobal.Payload;
 }
 

@@ -1,6 +1,6 @@
-import { IPresentation } from '../component/certification/IPresentation';
+import { ICertification } from '../component/certification/ICertification';
 
-const presentation: IPresentation.Payload = {
+const Certification: ICertification.Payload = {
   disable: false,
 
   list: [
@@ -57,4 +57,4 @@ const presentation: IPresentation.Payload = {
   ],
 };
 
-export default presentation;
+export default Certification;

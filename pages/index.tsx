@@ -9,9 +9,10 @@ import { Experience } from '../component/experience';
 import { Footer } from '../component/footer';
 import { Introduce } from '../component/introduce';
 import { OpenSource } from '../component/openSource';
-import { Presentation } from '../component/certification';
 import { Profile } from '../component/profile';
 import { Project } from '../component/project';
+import { SideProject } from '../component/sideproject';
+import { Certification } from '../component/certification';
 import { Skill } from '../component/skill';
 import { Style } from '../component/common/Style';
 import Payload from '../payload';
@@ -31,9 +32,10 @@ function Yosume() {
         <Skill.Component payload={Payload.skill} />
         <Experience.Component payload={Payload.experience} />
         <Project.Component payload={Payload.project} />
+        <SideProject.Component payload={Payload.sideproject} />
         <Education.Component payload={Payload.education} />
         <OpenSource.Component payload={Payload.openSource} />
-        <Presentation.Component payload={Payload.presentation} />
+        <Certification.Component payload={Payload.certification} />
         <Article.Component payload={Payload.article} />
         <Etc.Component payload={Payload.etc} />
         <Footer.Component payload={Payload.footer} />

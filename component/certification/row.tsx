@@ -4,11 +4,11 @@ import { CommonRows } from '../common/CommonRow';
 import { IRow } from '../common/IRow';
 import Util from '../common/Util';
 import { EmptyRowCol } from '../common';
-import { IPresentation } from './IPresentation';
+import { ICertification } from './ICertification';
 
 export default function PresentationRow({
   payload,
-}: PropsWithChildren<{ payload: IPresentation.Payload }>) {
+}: PropsWithChildren<{ payload: ICertification.Payload }>) {
   return (
     <EmptyRowCol>
       {payload.list.map((item, index) => {
@@ -18,7 +18,7 @@ export default function PresentationRow({
   );
 }
 
-function serialize(item: IPresentation.Item): IRow.Payload {
+function serialize(item: ICertification.Item): IRow.Payload {
   return {
     left: {
       title: DateTime.fromFormat(item.at, Util.LUXON_DATE_FORMAT.YY_LL_DD).toFormat(

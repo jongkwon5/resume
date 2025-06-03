@@ -5,7 +5,7 @@ const presentation: IPresentation.Payload = {
 
   list: [
     {
-      title: 'Lorem DDipsum',
+      title: 'Lorem DDipsumsss',
       subTitle: 'consectetur adipiscing elit',
       at: '2017-10',
       descriptions: [
