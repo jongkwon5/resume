@@ -39,7 +39,7 @@ export const Style: Record<TStyleKey, CSSProperties> = {
   sign: {
     fontFamily: "'Parisienne', cursive",
     fontSize: '1.5em',
-    marginTop: '0.5em',
+    marginTop: '-0.6em',
     marginBottom: '1em',
   },
 
