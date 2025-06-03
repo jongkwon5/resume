@@ -13,6 +13,7 @@ const experience: IExperience.Payload = {
           endedAt: '',
           descriptions: [
             {
+              weight: 'MEDIUM',
               content: '자사 솔루션 구축/개발',
             },
           ],
@@ -45,6 +46,7 @@ const experience: IExperience.Payload = {
                 '자사 솔루션 기반 대학정보화 업무 프로세스 통합(SI) 및 차세대 대학 종합정보시스템 구축/개발',
             },
             {
+              weight: 'MEDIUM',
               content:
                 '국립 금오공과대학교 종합정보시스템(학사 · 강사료 관리) 파트 풀스택 개발 담당',
               descriptions: [

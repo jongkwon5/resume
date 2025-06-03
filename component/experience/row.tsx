@@ -159,6 +159,23 @@ function createWorkingPeriod(startedAt: DateTime, endedAt?: DateTime | null) {
   return `${startedAt.toFormat(DATE_FORMAT)} ~ ${endedAt.toFormat(DATE_FORMAT)}`;
 }
 
+function getFontWeight(weight?: IRow.FontWeightType): React.CSSProperties['fontWeight'] {
+  switch (weight) {
+    case 'LIGHT':
+      return 300;
+    case 'REGULAR':
+      return 400;
+    case 'MEDIUM':
+      return 500;
+    case 'BOLD':
+      return 700;
+    case 'BOLDER':
+      return 700;
+    default:
+      return 300;
+  }
+}
+
 function renderDescriptions(descriptions: Array<string | IRow.Description>) {
   return descriptions.map((desc, index) => {
     if (typeof desc === 'string') {
@@ -168,7 +185,7 @@ function renderDescriptions(descriptions: Array<string | IRow.Description>) {
 
     return (
       // eslint-disable-next-line react/no-array-index-key
-      <li key={index}>
+      <li key={index} style={{ fontWeight: getFontWeight(desc.weight) }}>
         {desc.content}
         {desc.descriptions && desc.descriptions.length > 0 && (
           <ul>{renderDescriptions(desc.descriptions)}</ul>

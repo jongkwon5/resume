@@ -146,7 +146,7 @@ function getFontWeight(weight?: IRow.Description['weight']): CSSProperties {
 const fontWeight: Record<IRow.FontWeightType, number> = {
   DEFAULT: 300,
   LIGHT: 300,
-  REGULAR: 300,
+  REGULAR: 500,
   MEDIUM: 500,
   BOLDER: 700,
   BOLD: 500,
