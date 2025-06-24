@@ -24,7 +24,7 @@ const experience: IExperience.Payload = {
             'Oracle',
             'MongoDB',
             'JPA',
-            'MyBatis',
+            'Docker',
             'Jenkins',
             'Git/Github',
             'GitLab',

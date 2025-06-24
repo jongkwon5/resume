@@ -58,6 +58,9 @@ const devops: ISkill.Skill = {
   category: 'DevOps & CI/CD',
   items: [
     {
+      title: 'Docker',
+    },
+    {
       title: 'Jenkins',
     },
     {
@@ -66,17 +69,26 @@ const devops: ISkill.Skill = {
   ],
 };
 
+const Version: ISkill.Skill = {
+  category: 'Version Control',
+  items: [
+    {
+      title: 'Git/Github',
+    },
+    {
+      title: 'SVN',
+    },
+  ],
+};
+
 const tool: ISkill.Skill = {
-  category: 'IDE & Tool',
+  category: 'IDE & Tools',
   items: [
     {
       title: 'IntelliJ',
     },
     {
       title: 'Eclipse',
-    },
-    {
-      title: 'VScode',
     },
     {
       title: 'exBuilder6',
@@ -88,12 +100,6 @@ const etc: ISkill.Skill = {
   category: 'Etc',
   items: [
     {
-      title: 'Git/Github',
-    },
-    {
-      title: 'SVN',
-    },
-    {
       title: 'Tomcat',
     },
   ],
@@ -101,7 +107,7 @@ const etc: ISkill.Skill = {
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [pl, Front, DB, devops, tool, etc],
+  skills: [pl, Front, DB, devops, Version, tool, etc],
 };
 
 export default skill;
