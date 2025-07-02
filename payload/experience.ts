@@ -8,13 +8,30 @@ const experience: IExperience.Payload = {
       title: '(주)라인업코리아',
       positions: [
         {
-          title: '솔루션연구소 개발자',
+          title: '솔루션개발팀 웹 개발자',
           startedAt: '2025-05',
           endedAt: '',
           descriptions: [
             {
               weight: 'MEDIUM',
-              content: '자사 솔루션 구축/개발',
+              content: 'Rainbow 통합 모니터링 솔루션 개발',
+              descriptions: [
+                {
+                  content:
+                    '네트워크, 서버, 스토리지, 방화벽 등 인프라 장비의 전체 현황을 한눈에 파악할 수 있는 통합 모니터링 시스템 설계 및 구현 설계 및 구현',
+                },
+                {
+                  content:
+                    '자원별(CPU, Memory, Disk) 사용률 현황 및 임계치 초과 여부를 실시간 표시하고, 상위 과부하 장비를 별도 리스트로 제공하는 기능 구현',
+                },
+                {
+                  content:
+                    '정상/비정상 장비 비율, 전체 장비 대비 가동률, 일간 트래픽(Inbound/Outbound) 분석 차트 등 다양한 대시보드 제공',
+                },
+                {
+                  content: '하루 단위 차트 초기화 및 시간별 데이터 적재 자동화 기능 구현',
+                },
+              ],
             },
           ],
           skillKeywords: [
