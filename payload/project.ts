@@ -6,7 +6,7 @@ const project: IProject.Payload = {
   list: [
     {
       title: 'Rainbow 통합 모니터링 솔루션 개발',
-      startedAt: '25-05-01',
+      startedAt: '25-06-01',
       endedAt: '',
       where: '라인업코리아',
       descriptions: [

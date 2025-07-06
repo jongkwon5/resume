@@ -38,7 +38,7 @@ const experience: IExperience.Payload = {
             'Java',
             'JavaScript',
             'Spring',
-            'Oracle',
+            'MySQL',
             'MongoDB',
             'JPA',
             'Docker',
