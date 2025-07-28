@@ -1,6 +1,6 @@
-import { faCalendar, faEnvelope, faHouseUser, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faCalendar, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faBlogger, faGithub } from '@fortawesome/free-brands-svg-icons';
 import image from '../asset/profile.jpg';
 import { IProfile } from '../component/profile/IProfile';
 
@@ -20,6 +20,11 @@ const profile: IProfile.Payload = {
       icon: faGithub,
     },
     {
+      title: 'Blog',
+      link: 'https://jongkwon5.tistory.com/',
+      icon: faBlogger,
+    },
+    {
       title: 'jongkwong@naver.com',
       icon: faEnvelope,
     },
@@ -28,11 +33,7 @@ const profile: IProfile.Payload = {
       icon: faPhone,
     },
     {
-      title: '서울시 구로구',
-      icon: faHouseUser,
-    },
-    {
-      title: '1994. 03. 10.',
+      title: '1994. 03. 10. (31세)',
       icon: faCalendar,
     },
 

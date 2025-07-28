@@ -5,6 +5,11 @@ const education: IEducation.Payload = {
 
   list: [
     {
+      title: '한국방송통신대학교 컴퓨터과학과',
+      subTitle: '편입/재학중',
+      startedAt: '2025-09-01',
+    },
+    {
       title: '중앙정보처리학원',
       subTitle: 'JAVA 기반 풀스택 개발자 훈련 과정',
       startedAt: '2023-02-01',
