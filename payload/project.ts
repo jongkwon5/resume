@@ -13,7 +13,7 @@ const project: IProject.Payload = {
         {
           content: '',
           postImage:
-            'https://github.com/user-attachments/assets/4b6dda18-550d-4699-8342-d087882c3391',
+            'https://github.com/user-attachments/assets/d511179d-6106-4335-86c4-9be62c471da8',
         },
         {
           content:
