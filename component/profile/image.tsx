@@ -5,7 +5,7 @@ export default function ProfileImage({ src }: PropsWithChildren<{ src: string }>
 
   useEffect(() => {
     const updateHeight = () => {
-      setMaxHeight(window.innerWidth <= 766 ? '255px' : '325px');
+      setMaxHeight(window.innerWidth <= 766 ? '235x' : '325px');
     };
     updateHeight(); // 최초 실행
     window.addEventListener('resize', updateHeight);

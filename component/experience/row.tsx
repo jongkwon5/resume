@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default-member */
 import { Badge, Col, Row } from 'reactstrap';
 import { DateTime } from 'luxon';
 import { PropsWithChildren } from 'react';
@@ -104,24 +105,18 @@ export default function ExperienceRow({
 function createOverallWorkingPeriod(positions: PositionWithDates[]) {
   const DATE_FORMAT = Util.LUXON_DATE_FORMAT.YYYY_DOT_LL;
   const startedAt = positions[positions.length - 1].startedAtDate;
-  const isCurrentlyEmployed = positions.some((position) => position.isCurrent);
+  const currentPosition = positions.find((position) => position.isCurrent);
 
-  function hasEndedAtDate(
-    position: PositionWithDates,
-  ): position is PositionWithDates & { endedAtDate: DateTime } {
-    return position.endedAtDate !== null;
+  if (currentPosition) {
+    // 종료일이 없는 현재 재직 중
+    return `${startedAt.toFormat(DATE_FORMAT)} ~`;
   }
 
-  const endedAtDates = positions.filter(hasEndedAtDate).map((position) => position.endedAtDate);
+  const endedAtDates = positions
+    .filter((p): p is PositionWithDates & { endedAtDate: DateTime } => p.endedAtDate !== null)
+    .map((p) => p.endedAtDate!);
 
-  let endedAt: DateTime;
-  if (isCurrentlyEmployed) {
-    endedAt = DateTime.local();
-  } else if (endedAtDates.length > 0) {
-    endedAt = DateTime.max(...endedAtDates);
-  } else {
-    endedAt = DateTime.local();
-  }
+  const endedAt = endedAtDates.length > 0 ? DateTime.max(...endedAtDates) : DateTime.local();
 
   return `${startedAt.toFormat(DATE_FORMAT)} ~ ${endedAt.toFormat(DATE_FORMAT)}`;
 }

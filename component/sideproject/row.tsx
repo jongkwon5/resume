@@ -25,6 +25,7 @@ function serialize(payload: ISideProject.Item): IRow.Payload {
     ? DateTime.fromFormat(payload.endedAt, 'yy-LL-dd')
     : DateTime.local();
 
+  // eslint-disable-next-line import/no-named-as-default-member
   const duration = Util.getFormattingDuration(startedAtDate, endedAtDate);
 
   const DATE_FORMAT = Util.LUXON_DATE_FORMAT;

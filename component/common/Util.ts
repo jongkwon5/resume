@@ -15,22 +15,25 @@ enum LUXON_DATE_FORMAT {
   DURATION_KINDNESS_ONLY_MONTH = 'M개월',
 }
 
-function getFormattingDuration(from: DateTime, to: DateTime = DateTime.local()) {
-  const log = debug('Util:getFormattingDuration');
+export function getFormattingDuration(start: DateTime, end: DateTime): string {
+  const startYearMonth = start.year * 12 + start.month;
+  const endYearMonth = end.year * 12 + end.month;
 
-  // 햇수 계산을 위해 month 에 1개월 추가
-  const diff = to.plus({ month: 1 }).diff(from);
+  let totalMonths = endYearMonth - startYearMonth;
 
-  log(diff.milliseconds, diff.get('years'));
+  // 날짜(day) 차이에 따라 1개월 추가 여부 결정
+  if (end.day >= start.day) {
+    totalMonths += 1;
+  }
 
-  // 기간이 1년 미만이면 포맷팅을 변경
-  const format =
-    // diff.years 가 0으로 계속 찍혀 밀리세컨드로 1년 비교
-    diff.milliseconds < 31536000000
-      ? LUXON_DATE_FORMAT.DURATION_KINDNESS_ONLY_MONTH
-      : LUXON_DATE_FORMAT.DURATION_KINDNESS;
+  const years = Math.floor(totalMonths / 12);
+  const months = totalMonths % 12;
 
-  return diff.toFormat(format);
+  const result: string[] = [];
+  if (years > 0) result.push(`${years}년`);
+  if (months > 0) result.push(`${months}개월`);
+
+  return result.length > 0 ? result.join(' ') : '1개월 미만';
 }
 
 function debug(channel: string) {

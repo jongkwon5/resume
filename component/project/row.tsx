@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default-member */
 import { Badge } from 'reactstrap';
 import { DateTime } from 'luxon';
 import { PropsWithChildren } from 'react';

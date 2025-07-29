@@ -48,9 +48,6 @@ const DB: ISkill.Skill = {
     {
       title: 'MySQL',
     },
-    {
-      title: 'MongoDB',
-    },
   ],
 };
 

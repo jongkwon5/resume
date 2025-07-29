@@ -33,14 +33,26 @@ const experience: IExperience.Payload = {
                 },
               ],
             },
+            {
+              weight: 'MEDIUM',
+              content: '서울기록원 아카이브 관리 시스템 유지 보수 및 기능 개선',
+              descriptions: [
+                {
+                  content: '사용자 정보 수정 및 비밀번호 정책 강화 등 기능 개선 업무 수행',
+                },
+                {
+                  content: '개발·검증·운영 서버 WAR 배포 및 Resin 서버 운영 반영',
+                },
+              ],
+            },
           ],
           skillKeywords: [
             'Java',
             'JavaScript',
             'Spring',
             'MySQL',
-            'MongoDB',
             'JPA',
+            'MyBatis',
             'Docker',
             'Jenkins',
             'Git/Github',
