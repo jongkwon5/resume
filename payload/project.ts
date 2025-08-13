@@ -8,7 +8,7 @@ const project: IProject.Payload = {
       title: 'Rainbow 통합 모니터링 솔루션 개발',
       startedAt: '25-06-01',
       endedAt: '',
-      where: '라인업코리아',
+      where: '(주)라인업코리아',
       descriptions: [
         {
           content: '',

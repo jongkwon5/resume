@@ -27,6 +27,8 @@ export declare namespace IEtc {
      */
     startedAt: string;
 
+    subTitle: string;
+
     /**
      *  ### 기타 항목 종료 시점
      *

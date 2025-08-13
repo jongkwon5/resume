@@ -40,12 +40,12 @@ function EducationRow({ payload }: PropsWithChildren<{ payload: Payload }>) {
 
 function serialize(item: Item): IRow.Payload {
   const DATE_FORMAT = Util.LUXON_DATE_FORMAT;
-  const startedAt = DateTime.fromFormat(item.startedAt, DATE_FORMAT.YY_LL_DD).toFormat(
+  const startedAt = DateTime.fromFormat(item.startedAt, DATE_FORMAT.YYYY_LL_DD).toFormat(
     DATE_FORMAT.YYYY_DOT_LL,
   );
   const title = (() => {
     if (item.endedAt) {
-      const endedAt = DateTime.fromFormat(item.endedAt, DATE_FORMAT.YYYY_LL).toFormat(
+      const endedAt = DateTime.fromFormat(item.endedAt, DATE_FORMAT.YYYY_LL_DD).toFormat(
         DATE_FORMAT.YYYY_DOT_LL,
       );
       return `${startedAt} ~ ${endedAt}`;
