@@ -16,23 +16,75 @@ const project: IProject.Payload = {
             'https://github.com/user-attachments/assets/d511179d-6106-4335-86c4-9be62c471da8',
         },
         {
-          content:
-            '네트워크, 서버, 스토리지, 방화벽 등 인프라 장비의 전체 현황을 한눈에 파악할 수 있는 통합 모니터링 시스템 설계 및 구현 설계 및 구현',
+          content: '메인 대시보드(1차 버전 구현)',
           weight: 'MEDIUM',
+          descriptions: [
+            {
+              content: ' DB에 등록된 장비 목록 및 상태를 기반으로 현황 대시보드 1차 버전 구현',
+            },
+            {
+              content:
+                ' 향후 모니터링 지표(CPU, Memory, Disk 등) 확장을 고려한 유연한 화면 구조 설계',
+            },
+            {
+              content:
+                '장비 관리 페이지에서 등록/수정된 장비의 상태가 대시보드에 실시간으로 반영되는 기능 구현',
+            },
+          ],
         },
         {
-          content:
-            '자원별(CPU, Memory, Disk) 사용률 현황 및 임계치 초과 여부를 실시간 표시하고, 상위 과부하 장비를 별도 리스트로 제공하는 기능 구현',
+          content: '장비 등록 관리(관리자 화면)',
           weight: 'MEDIUM',
+          descriptions: [
+            {
+              content: '모니터링 장비의 효율적인 등록 및 관리를 위한 UI/UX 설계 및 구현',
+            },
+            {
+              content: '중복 등록 검증 및 입력값 유효성 검사(클라이언트/서버)로 데이터 품질 확보',
+            },
+            {
+              content: '등록된 장비 정보가 대시보드에 즉시 반영되도록 DB 연동',
+            },
+          ],
         },
         {
-          content:
-            '정상/비정상 장비 비율, 전체 장비 대비 가동률, 일간 트래픽(Inbound/Outbound) 분석 차트 등 다양한 대시보드 제공',
+          content: 'DB 스키마 설계',
           weight: 'MEDIUM',
+          descriptions: [
+            {
+              content: 'Device : 장비 식별자, IP, 상태, 생성/변경일 등 기본 정보 관리',
+            },
+            {
+              content:
+                'Processors : 향후 수집될 CPU 성능 데이터 및 장비 FK를 포함한 시계열 데이터 관리 구조 설계',
+            },
+          ],
         },
         {
-          content: '하루 단위 차트 초기화 및 시간별 데이터 적재 자동화 기능 구현',
+          content: '백엔드 API 설계',
           weight: 'MEDIUM',
+          descriptions: [
+            {
+              content: '장비 정보 조회를 위한 REST API 엔드포인트 설계 (/devices 등)',
+            },
+            {
+              content:
+                'Spring AOP를 활용하여 트랜잭션 및 예외 처리 로직을 설계, 비즈니스 로직과 공통 기능을 분리하여 유지보수성 향상',
+            },
+          ],
+        },
+        {
+          content: 'Git 컨벤션·배포 가이드 표준화',
+          weight: 'MEDIUM',
+          descriptions: [
+            {
+              content: 'Git Commit 메시지 및 Branch 전략 등 Git 컨벤션 규칙을 수립·문서화',
+            },
+            {
+              content:
+                '시스템의 안정적 운영과 원활한 인수인계를 위한 설치·배포 가이드 작성 및 표준화',
+            },
+          ],
         },
         {
           weight: 'BOLDER',
@@ -49,10 +101,6 @@ const project: IProject.Payload = {
             'GitLab',
             'intelliJ',
           ],
-        },
-        {
-          content: 'https://onekit.kumoh.ac.kr',
-          href: 'https://onekit.kumoh.ac.kr',
         },
       ],
     },
