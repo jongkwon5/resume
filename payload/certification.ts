@@ -5,6 +5,11 @@ const Certification: ICertification.Payload = {
 
   list: [
     {
+      title: '네트워크관리사 2급',
+      subTitle: '한국정보통신자격협회',
+      at: '25-09-16',
+    },
+    {
       title: '정보처리기사',
       subTitle: '한국산업인력공단',
       at: '23-09-01',

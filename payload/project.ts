@@ -16,19 +16,18 @@ const project: IProject.Payload = {
             'https://github.com/user-attachments/assets/d511179d-6106-4335-86c4-9be62c471da8',
         },
         {
-          content: '메인 대시보드(1차 버전 구현)',
+          content: '실시간 모니터링 지표 제공 및 사용자 중심 대시보드 구현',
           weight: 'MEDIUM',
           descriptions: [
             {
-              content: ' DB에 등록된 장비 목록 및 상태를 기반으로 현황 대시보드 1차 버전 구현',
+              content: 'DB에 등록된 장비 목록 및 상태를 기반으로 현황 대시보드 구현',
             },
             {
               content:
-                ' 향후 모니터링 지표(CPU, Memory, Disk 등) 확장을 고려한 유연한 화면 구조 설계',
+                '향후 모니터링 지표(CPU, Memory, Disk 등) 확장을 고려한 유연한 화면 구조 설계',
             },
             {
-              content:
-                '장비 관리 페이지에서 등록/수정된 장비의 상태가 대시보드에 실시간으로 반영되는 기능 구현',
+              content: 'SSE 기반 실시간 반영 + 직관적 시각화를 통해 관리 사용 편의성 향상',
             },
           ],
         },
@@ -40,10 +39,7 @@ const project: IProject.Payload = {
               content: '모니터링 장비의 효율적인 등록 및 관리를 위한 UI/UX 설계 및 구현',
             },
             {
-              content: '중복 등록 검증 및 입력값 유효성 검사(클라이언트/서버)로 데이터 품질 확보',
-            },
-            {
-              content: '등록된 장비 정보가 대시보드에 즉시 반영되도록 DB 연동',
+              content: ' 중복 등록 검증 및 입력값 유효성 검사(클라이언트/서버)로 데이터 품질 확보',
             },
           ],
         },
@@ -61,15 +57,22 @@ const project: IProject.Payload = {
           ],
         },
         {
-          content: '백엔드 API 설계',
+          content: '서비스 간 REST API 연동 및 AOP 기반 공통 기능 모듈화',
           weight: 'MEDIUM',
           descriptions: [
             {
               content: '장비 정보 조회를 위한 REST API 엔드포인트 설계 (/devices 등)',
             },
             {
-              content:
-                'Spring AOP를 활용하여 트랜잭션 및 예외 처리 로직을 설계, 비즈니스 로직과 공통 기능을 분리하여 유지보수성 향상',
+              content: 'Spring AOP 기반 Aspect/Advice 활용',
+              descriptions: [
+                {
+                  content: 'API 호출 로깅 및 성능(메서드 실행 시간) 측정 자동화',
+                },
+                {
+                  content: '공통 로직 분리로 성능 병목 구간 식별 및 유지보수성 향상',
+                },
+              ],
             },
           ],
         },
@@ -78,11 +81,10 @@ const project: IProject.Payload = {
           weight: 'MEDIUM',
           descriptions: [
             {
-              content: 'Git Commit 메시지 및 Branch 전략 등 Git 컨벤션 규칙을 수립·문서화',
+              content: 'Git Commit 메시지 및 Branch 전략 등 Git 컨벤션 규칙 수립·문서화',
             },
             {
-              content:
-                '시스템의 안정적 운영과 원활한 인수인계를 위한 설치·배포 가이드 작성 및 표준화',
+              content: '시스템의 안정적 운영과 원활한 인수인계를 위한 설치·배포 가이드 작성',
             },
           ],
         },
