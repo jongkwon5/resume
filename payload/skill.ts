@@ -25,9 +25,6 @@ const Front: ISkill.Skill = {
   category: 'Front-end',
   items: [
     {
-      title: 'React',
-    },
-    {
       title: 'JavaScript',
     },
     {

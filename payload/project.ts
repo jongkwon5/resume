@@ -5,9 +5,147 @@ const project: IProject.Payload = {
   disableTotalPeriod: false,
   list: [
     {
+      title: '서울기록원 디지털 아카이브 관리 시스템 고도화',
+      startedAt: '25-07-01',
+      endedAt: '',
+      where: '(주)라인업코리아',
+      descriptions: [
+        {
+          content: '',
+          postImage:
+            'https://github.com/user-attachments/assets/a072f4c1-48f6-4316-8b54-11fc33158a07',
+        },
+        {
+          content: '에디터 업로드 구조 개선 (Base64 → 파일서버/URL)',
+          weight: 'MEDIUM',
+          descriptions: [
+            {
+              content:
+                '기존 CLOB + Base64UploadAdapter 방식으로 DB에 이미지 데이터를 직접 저장하던 구조를 개선',
+            },
+            {
+              content: '이미지 Base64 저장 방식을 파일 서버 기반 URL 참조 구조로 변경',
+            },
+            {
+              content: 'DB 저장 공간 절감',
+              descriptions: [
+                {
+                  content: '단일 이미지(705KB) 저장 용량 0.919MB → 0.00016MB (약 1/5,700 감소)',
+                },
+                {
+                  content: '5장 기준 4.59MB → 0.00076MB (약 1/6,000 감소)',
+                },
+              ],
+            },
+            {
+              content: '업로드 성능 개선',
+              descriptions: [
+                {
+                  content: '대용량(8.72MB × 5개) 업로드 시간 14.66초 → 23.7ms (약 600배 개선)',
+                },
+              ],
+            },
+            {
+              content: '네트워크 효율 향상',
+              descriptions: [
+                {
+                  content:
+                    'Base64 대비 전송 크기 33% 절감, 브라우저 캐시 활용으로 재조회 속도 향상',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          content: '대용량 엑셀 다운로드 최적화',
+          weight: 'MEDIUM',
+          descriptions: [
+            {
+              content: '기존 XSSFWorkbook 사용으로 OOM 및 응답 지연 발생',
+            },
+            {
+              content: '쿼리 구조 개선 (1차 개선)',
+              descriptions: [
+                {
+                  content:
+                    'for-loop 기반 개별 조회 제거, UUID 리스트를 900개 단위로 IN 절 일괄 조회',
+                },
+                {
+                  content: '스칼라 서브쿼리 제거 및 JOIN 단일 쿼리 리팩터링',
+                },
+                {
+                  content: '엑셀 생성 시간 146초 → 27초 (81.5% 단축)',
+                },
+              ],
+            },
+            {
+              content: 'XSSF → SXSSF 전환 (2차 개선)',
+              descriptions: [
+                {
+                  content:
+                    'SXSSFWorkbook 적용으로 일정 Row 단위만 메모리에 유지, 나머지는 디스크로 flush',
+                },
+                {
+                  content: 'flush된 Row 재작성 오류 해결 → createRow()를 append 방식으로 수정',
+                },
+              ],
+            },
+            {
+              content: '성능 개선 효과',
+              descriptions: [
+                {
+                  content: '파일 생성 시간 121초 → 19초 (84% 단축)',
+                },
+                {
+                  content: '메모리 사용량 4GB → 500MB (약 88% 절감)',
+                },
+                {
+                  content: 'DB I/O 횟수 1만 회 이상 → 수십 회 수준으로 감소',
+                },
+                {
+                  content: 'CPU 사용률 55% → 10% 이하 안정화',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          content: '전거 등록부 고도화',
+          weight: 'MEDIUM',
+          descriptions: [
+            {
+              content: '다중 조인 병목 해소를 위한 SQL 리팩터링 및 인덱스 구조 재설계',
+            },
+            {
+              content: 'FK 인덱스 추가 및 불필요한 조인 제거로 쿼리 속도 개선',
+            },
+            {
+              content: '수십만 건 조회에서도 안정적 응답 속도 확보',
+            },
+          ],
+        },
+        {
+          weight: 'BOLDER',
+          content: 'Skill Keywords',
+          skillKeywords: [
+            'Java',
+            'JavaScript',
+            'Spring',
+            'Oracle',
+            'JPA',
+            'MyBatis',
+            'Jenkins',
+            'Git/Github',
+            'GitLab',
+            'intelliJ',
+          ],
+        },
+      ],
+    },
+    {
       title: 'Rainbow 통합 모니터링 솔루션 개발',
       startedAt: '25-06-01',
-      endedAt: '',
+      endedAt: '25-09-01',
       where: '(주)라인업코리아',
       descriptions: [
         {
@@ -44,24 +182,11 @@ const project: IProject.Payload = {
           ],
         },
         {
-          content: 'DB 스키마 설계',
-          weight: 'MEDIUM',
-          descriptions: [
-            {
-              content: 'Device : 장비 식별자, IP, 상태, 생성/변경일 등 기본 정보 관리',
-            },
-            {
-              content:
-                'Processors : 향후 수집될 CPU 성능 데이터 및 장비 FK를 포함한 시계열 데이터 관리 구조 설계',
-            },
-          ],
-        },
-        {
           content: '서비스 간 REST API 연동 및 AOP 기반 공통 기능 모듈화',
           weight: 'MEDIUM',
           descriptions: [
             {
-              content: '장비 정보 조회를 위한 REST API 엔드포인트 설계 (/devices 등)',
+              content: '장비 정보 조회를 위한 REST API 엔드포인트 설계',
             },
             {
               content: 'Spring AOP 기반 Aspect/Advice 활용',
@@ -77,14 +202,14 @@ const project: IProject.Payload = {
           ],
         },
         {
-          content: 'Git 컨벤션·배포 가이드 표준화',
+          content: 'Git 컨벤션/배포 가이드 표준화',
           weight: 'MEDIUM',
           descriptions: [
             {
-              content: 'Git Commit 메시지 및 Branch 전략 등 Git 컨벤션 규칙 수립·문서화',
+              content: 'Git Commit 메시지 및 Branch 전략 등 Git 컨벤션 규칙 수립 및 문서화',
             },
             {
-              content: '시스템의 안정적 운영과 원활한 인수인계를 위한 설치·배포 가이드 작성',
+              content: '시스템의 안정적 운영과 원활한 인수인계를 위한 설치/배포 가이드 작성',
             },
           ],
         },

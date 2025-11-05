@@ -14,45 +14,47 @@ const experience: IExperience.Payload = {
           descriptions: [
             {
               weight: 'MEDIUM',
+              content: '서울기록원 디지털 아카이브 관리 시스템 고도화',
+              descriptions: [
+                {
+                  content:
+                    'CKEditor 업로드 구조 개선(Base64 → 파일서버 URL)으로 DB 용량 6,000배 절감, 업로드 속도 600배 향상',
+                },
+                {
+                  content:
+                    '대용량 엑셀 다운로드 최적화(XSSF → SXSSF)로 생성 시간 121초 → 19초(84% 단축), 메모리 사용량 88% 절감',
+                },
+                {
+                  content:
+                    'N+1 Query 제거 및 JOIN 단일 쿼리 구조 리팩터링으로 DB I/O 효율 대폭 개선',
+                },
+                {
+                  content:
+                    '전거 등록부 SQL 구조 단순화 및 다중 조인 병목 해소로 조회 속도 21초 → 0.7초(97% 단축)',
+                },
+                {
+                  content: '시스템 전반의 데이터 처리 안정성 및 대용량 환경 대응력 강화',
+                },
+              ],
+            },
+            {
+              weight: 'MEDIUM',
               content: 'Rainbow 통합 모니터링 솔루션 개발',
               descriptions: [
                 {
                   content:
-                    'DB 기반 장비 현황 모니터링 개발, SSE 적용으로 실시간 반영 및 직관적 시각화 제공',
+                    'DB 기반 장비 현황 모니터링 대시보드 개발 및 SSE 기반 실시간 지표 반영 구조 구현',
                 },
                 {
                   content:
-                    '중복 검증 및 유효성 검사(클라이언트·서버) 적용, 등록 즉시 대시보드 반영되는 관리자 화면 구현',
-                },
-                {
-                  content:
-                    'Device, Processors 등 모니터링 지표 확장을 고려한 시계열 데이터 관리 구조 설계',
+                    'Spring AOP 기반 API 호출 로깅 및 메서드 실행시간 측정 자동화, 공통 로직 분리로 유지보수성 향상',
                 },
                 {
                   content:
                     'API 호출 로깅 및 실행 시간 측정 자동화, 공통 로직 분리로 유지보수 및 성능 개선',
                 },
                 {
-                  content:
-                    'Git 컨벤션 정립 및 문서화, Jenkins·Docker 기반 배포 프로세스 준수, 설치·배포 가이드 작성',
-                },
-              ],
-            },
-            {
-              weight: 'MEDIUM',
-              content: '서울기록원 아카이브 관리 시스템 기능 개선 및 유지 보수',
-              descriptions: [
-                {
-                  content:
-                    '기존 검색 엔진의 조건 불일치·재검색 불가·필터 충돌 문제 해결, Query/ReQuery 누적 관리 및 충돌 방지 로직 설계',
-                },
-                {
-                  content:
-                    '상세/목록 건수 불일치 문제를 API 동기화 구조로 개선, 실시간 TotalCount API 구현으로 정합성 100% 보장',
-                },
-                {
-                  content:
-                    'SessionStorage + VO 기반 상태 관리 구조 도입, 최초 검색과 재검색을 명확히 분리해 조건 충돌 제거 및 탐색 안정성 확보',
+                  content: 'Git 컨벤션 정립 및 문서화, 설치/배포 가이드 작성',
                 },
               ],
             },
