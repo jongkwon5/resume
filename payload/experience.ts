@@ -26,7 +26,7 @@ const experience: IExperience.Payload = {
                 },
                 {
                   content:
-                    'N+1 Query 제거 및 JOIN 단일 쿼리 구조 리팩터링으로 DB I/O 효율 대폭 개선',
+                    'N+1 Query 제거 및 JOIN 단일 쿼리 구조 리팩토링으로 DB I/O 효율 대폭 개선',
                 },
                 {
                   content:
@@ -50,8 +50,7 @@ const experience: IExperience.Payload = {
                     'Spring AOP 기반 API 호출 로깅 및 메서드 실행시간 측정 자동화, 공통 로직 분리로 유지보수성 향상',
                 },
                 {
-                  content:
-                    'API 호출 로깅 및 실행 시간 측정 자동화, 공통 로직 분리로 유지보수 및 성능 개선',
+                  content: '향후 모니터링 지표(CPU, Memory, Disk 등) 확장을 고려한 대시보드 구현',
                 },
                 {
                   content: 'Git 컨벤션 정립 및 문서화, 설치/배포 가이드 작성',

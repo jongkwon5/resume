@@ -71,10 +71,7 @@ const project: IProject.Payload = {
                     'for-loop 기반 개별 조회 제거, UUID 리스트를 900개 단위로 IN 절 일괄 조회',
                 },
                 {
-                  content: '스칼라 서브쿼리 제거 및 JOIN 단일 쿼리 리팩터링',
-                },
-                {
-                  content: '엑셀 생성 시간 146초 → 27초 (81.5% 단축)',
+                  content: '스칼라 서브쿼리 제거 및 JOIN 단일 쿼리 리팩토링',
                 },
               ],
             },
@@ -97,13 +94,13 @@ const project: IProject.Payload = {
                   content: '파일 생성 시간 121초 → 19초 (84% 단축)',
                 },
                 {
-                  content: '메모리 사용량 4GB → 500MB (약 88% 절감)',
+                  content: '메모리 사용량 4GB → 500MB 이하(약 88% 절감)',
                 },
                 {
                   content: 'DB I/O 횟수 1만 회 이상 → 수십 회 수준으로 감소',
                 },
                 {
-                  content: 'CPU 사용률 55% → 10% 이하 안정화',
+                  content: 'CPU 사용률 55% 이상 → 10% 이하 안정화',
                 },
               ],
             },
@@ -114,7 +111,7 @@ const project: IProject.Payload = {
           weight: 'MEDIUM',
           descriptions: [
             {
-              content: '다중 조인 병목 해소를 위한 SQL 리팩터링 및 인덱스 구조 재설계',
+              content: '다중 조인 병목 해소를 위한 SQL 리팩토링 및 인덱스 구조 재설계',
             },
             {
               content: 'FK 인덱스 추가 및 불필요한 조인 제거로 쿼리 속도 개선',
