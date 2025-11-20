@@ -21,16 +21,16 @@ const project: IProject.Payload = {
           descriptions: [
             {
               content:
-                '기존 CLOB + Base64UploadAdapter 방식으로 DB에 이미지 데이터를 직접 저장하던 구조를 개선',
+                '기존 CLOB + Base64 방식으로 인해 DB 용량 폭증 및 대용량 이미지 업로드 시 14.66초의 지연 발생',
             },
             {
-              content: '이미지 Base64 저장 방식을 파일 서버 기반 URL 참조 구조로 변경',
+              content: '이미지 에디터 업로드 구조를 Base64 → 파일 서버 URL 기반으로 전면 개편',
             },
             {
               content: 'DB 저장 공간 절감',
               descriptions: [
                 {
-                  content: '단일 이미지(705KB) 저장 용량 0.919MB → 0.00016MB (약 1/5,700 감소)',
+                  content: '단일 이미지(705KB) 기준 0.919MB → 0.00016MB (약 1/5,700 감소)',
                 },
                 {
                   content: '5장 기준 4.59MB → 0.00076MB (약 1/6,000 감소)',
@@ -46,11 +46,11 @@ const project: IProject.Payload = {
               ],
             },
             {
-              content: '네트워크 효율 향상',
+              content: '운영 안정성 확보',
               descriptions: [
                 {
                   content:
-                    'Base64 대비 전송 크기 33% 절감, 브라우저 캐시 활용으로 재조회 속도 향상',
+                    '/temp → /post 파일 이동 구조 구현 및 잔여 파일 누적 문제 해결을 위한 Crontab 자동 삭제 도입',
                 },
               ],
             },
@@ -71,7 +71,7 @@ const project: IProject.Payload = {
                     'for-loop 기반 개별 조회 제거, UUID 리스트를 900개 단위로 IN 절 일괄 조회',
                 },
                 {
-                  content: '스칼라 서브쿼리 제거 및 JOIN 단일 쿼리 리팩토링',
+                  content: 'N+1 Query 제거 및 JOIN 기반 단일 쿼리로 리팩토링',
                 },
               ],
             },
@@ -94,7 +94,7 @@ const project: IProject.Payload = {
                   content: '파일 생성 시간 121초 → 19초 (84% 단축)',
                 },
                 {
-                  content: '메모리 사용량 4GB → 500MB 이하(약 88% 절감)',
+                  content: '최대 메모리 사용량 약 2,250MB → 약 750MB (66% 절감)',
                 },
                 {
                   content: 'DB I/O 횟수 1만 회 이상 → 수십 회 수준으로 감소',
@@ -184,6 +184,9 @@ const project: IProject.Payload = {
           descriptions: [
             {
               content: '장비 정보 조회를 위한 REST API 엔드포인트 설계',
+            },
+            {
+              content: 'Swagger API를 활용하여 API 문서화 및 테스트 환경 구축',
             },
             {
               content: 'Spring AOP 기반 Aspect/Advice 활용',

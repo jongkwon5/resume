@@ -22,7 +22,7 @@ const experience: IExperience.Payload = {
                 },
                 {
                   content:
-                    '대용량 엑셀 다운로드 최적화(XSSF → SXSSF)로 생성 시간 121초 → 19초(84% 단축), 메모리 사용량 88% 절감',
+                    '대용량 엑셀 다운로드 최적화(XSSF → SXSSF)로 생성 시간 121초 → 19초(84% 단축), 메모리 사용량 66% 절감',
                 },
                 {
                   content:
@@ -50,7 +50,7 @@ const experience: IExperience.Payload = {
                     'Spring AOP 기반 API 호출 로깅 및 메서드 실행시간 측정 자동화, 공통 로직 분리로 유지보수성 향상',
                 },
                 {
-                  content: '향후 모니터링 지표(CPU, Memory, Disk 등) 확장을 고려한 대시보드 구현',
+                  content: 'Swagger를 활용한 API 문서화 및 테스트 환경 구축',
                 },
                 {
                   content: 'Git 컨벤션 정립 및 문서화, 설치/배포 가이드 작성',

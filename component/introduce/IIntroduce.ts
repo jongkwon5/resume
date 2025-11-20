@@ -19,14 +19,12 @@ export declare namespace IIntroduce {
     top2: string;
     top3: string;
     top4: string;
-    top5: string;
-    top6: string;
+
     content1: string;
     content2: string;
     content3: string;
     content4: string;
-    content5: string;
-    content6: string;
+
     /**
      * ### 하단 싸인
      *
