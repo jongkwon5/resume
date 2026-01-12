@@ -7,7 +7,7 @@ const project: IProject.Payload = {
     {
       title: '서울기록원 디지털 아카이브 관리 시스템 고도화',
       startedAt: '25-07-01',
-      endedAt: '',
+      endedAt: '25-12-31',
       where: '(주)라인업코리아',
       descriptions: [
         {

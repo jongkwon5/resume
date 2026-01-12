@@ -10,7 +10,7 @@ const experience: IExperience.Payload = {
         {
           title: '솔루션개발팀 웹 개발자',
           startedAt: '2025-05',
-          endedAt: '',
+          endedAt: '2026-01',
           descriptions: [
             {
               weight: 'MEDIUM',

@@ -6,7 +6,7 @@ const education: IEducation.Payload = {
   list: [
     {
       title: '한국방송통신대학교 컴퓨터과학과',
-      subTitle: '편입/재학중',
+      subTitle: '편입/재학중 학점 (3.8 / 4.5)',
       startedAt: '2025-09-01',
     },
     {
