@@ -5,6 +5,30 @@ const experience: IExperience.Payload = {
   disableTotalPeriod: false,
   list: [
     {
+      title: '명화공업',
+      positions: [
+        {
+          title: '개발자',
+          startedAt: '2026-01',
+          endedAt: '',
+          descriptions: [
+            {
+              weight: 'MEDIUM',
+              content: 'BI & RPA 개발 및 유지보수',
+            },
+            {
+              weight: 'MEDIUM',
+              content: '업무간소화 및 자동화',
+            },
+            {
+              weight: 'MEDIUM',
+              content: '데이터분석 및 모니터링',
+            },
+          ],
+        },
+      ],
+    },
+    {
       title: '(주)라인업코리아',
       positions: [
         {
