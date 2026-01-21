@@ -5,7 +5,7 @@ const experience: IExperience.Payload = {
   disableTotalPeriod: false,
   list: [
     {
-      title: '명화공업',
+      title: '(주)명화공업',
       positions: [
         {
           title: '개발자',
@@ -25,6 +25,7 @@ const experience: IExperience.Payload = {
               content: '데이터분석 및 모니터링',
             },
           ],
+          // skillKeywords: ['Java'],
         },
       ],
     },
