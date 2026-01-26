@@ -8,7 +8,7 @@ const experience: IExperience.Payload = {
       title: '(주)명화공업',
       positions: [
         {
-          title: '개발자',
+          title: '디지털혁신팀 개발자',
           startedAt: '2026-01',
           endedAt: '',
           descriptions: [
@@ -33,7 +33,7 @@ const experience: IExperience.Payload = {
       title: '(주)라인업코리아',
       positions: [
         {
-          title: '솔루션개발팀 웹 개발자',
+          title: '솔루션개발팀 솔루션 개발자',
           startedAt: '2025-05',
           endedAt: '2026-01',
           descriptions: [
@@ -110,7 +110,7 @@ const experience: IExperience.Payload = {
             {
               weight: 'MEDIUM',
               content:
-                '자사 솔루션 기반 대학정보화 업무 프로세스 통합(SI) 및 차세대 대학 종합정보시스템 구축/개발',
+                '자사 솔루션 기반 대학정보화 업무 프로세스 통합 및 차세대 대학 종합정보시스템 구축/개발',
             },
             {
               weight: 'MEDIUM',

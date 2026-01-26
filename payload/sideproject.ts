@@ -140,7 +140,7 @@ const project: ISideProject.Payload = {
           ],
         },
         {
-          content: 'Github : https://github.com/jongkwon5/TravelTogether',
+          content: 'https://github.com/jongkwon5/TravelTogether',
           href: 'https://github.com/jongkwon5/TravelTogether',
         },
       ],
@@ -266,7 +266,7 @@ const project: ISideProject.Payload = {
           ],
         },
         {
-          content: 'Github : https://github.com/jongkwon5/Entertainment',
+          content: 'https://github.com/jongkwon5/Entertainment',
           href: 'https://github.com/jongkwon5/Entertainment',
         },
       ],

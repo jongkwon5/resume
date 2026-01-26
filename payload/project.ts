@@ -7,7 +7,7 @@ const project: IProject.Payload = {
     {
       title: '서울기록원 디지털 아카이브 관리 시스템 고도화',
       startedAt: '25-07-01',
-      endedAt: '25-12-31',
+      endedAt: '26-01-09',
       where: '(주)라인업코리아',
       descriptions: [
         {
@@ -137,18 +137,22 @@ const project: IProject.Payload = {
             'intelliJ',
           ],
         },
+        {
+          content: 'https://archives.seoul.go.kr',
+          href: 'https://archives.seoul.go.kr',
+        },
       ],
     },
     {
       title: 'Rainbow 통합 모니터링 솔루션 개발',
       startedAt: '25-06-01',
-      endedAt: '25-09-01',
+      endedAt: '25-10-01',
       where: '(주)라인업코리아',
       descriptions: [
         {
           content: '',
           postImage:
-            'https://github.com/user-attachments/assets/d511179d-6106-4335-86c4-9be62c471da8',
+            'https://github.com/user-attachments/assets/12a841a7-97cd-4d84-b117-10b760fb5f84',
         },
         {
           content: '실시간 모니터링 지표 제공 및 사용자 중심 대시보드 구현',
@@ -233,14 +237,14 @@ const project: IProject.Payload = {
     },
     {
       title: '국립 금오공과대학교 종합정보시스템 웹 개발',
-      startedAt: '24-05-01',
+      startedAt: '24-04-01',
       endedAt: '25-02-10',
       where: '(주)아카넷 서울지사',
       descriptions: [
         {
           content: '',
           postImage:
-            'https://github.com/user-attachments/assets/9cc6fd68-9432-4e88-9903-f4432c3dce59',
+            'https://github.com/user-attachments/assets/e653f4a4-440b-4628-b846-159fccc215c6',
         },
         {
           content: '종합정보시스템 학사(수업) 및 강사료 관리 파트 풀스택 개발',
