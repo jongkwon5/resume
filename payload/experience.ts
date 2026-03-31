@@ -14,18 +14,75 @@ const experience: IExperience.Payload = {
           descriptions: [
             {
               weight: 'MEDIUM',
-              content: 'BI & RPA 개발 및 유지보수',
+              content: '전사 통합 업무 신규 Portal 개발',
+              descriptions: [
+                {
+                  content:
+                    '전사 11개 사업장(해외 공장 포함) 노후 Portal 전면 개편 (기획 ~ 운영 전 과정 단독 수행)',
+                },
+                {
+                  content: 'Java/Spring Boot 활용 풀스택 개발 및 IIS 환경 배포',
+                },
+                {
+                  content:
+                    '사내 포탈 핵심 기능 구축 및 Python 스크립트 기반 BI 썸네일(240개) 자동 캡처/이관, 그룹웨어 연동',
+                },
+                {
+                  content:
+                    '기획서, ERD, 시스템 구성도, 운영 매뉴얼 등 프로젝트 전 주기 산출물 단독 작성',
+                },
+                {
+                  content: '사용자 편의성 및 업무 효율성 개선으로 사용자 만족도 93% 향상',
+                },
+              ],
             },
             {
               weight: 'MEDIUM',
-              content: '업무간소화 및 자동화',
+              content: 'TLMS 통합 관리 시스템 개발',
+              descriptions: [
+                {
+                  content:
+                    '연구소 시험팀 대상 맞춤형 관리 시스템 구축 (개발 완료 후 전 공장 수평 전개 예정)',
+                },
+                {
+                  content:
+                    '시험실 관리 기능 구축 : 일별 장비 예약, 미예약 장비 조회, 실시간 모니터링 기능 구현',
+                },
+                {
+                  content:
+                    '자산 관리 기능 고도화 : 장비 유지보수 주기 자동 알림, 장비·샘플 정보 열람 기능 개발',
+                },
+              ],
             },
             {
               weight: 'MEDIUM',
-              content: '데이터분석 및 모니터링',
+              content: 'Tableau 데이터 시각화 및 시스템 자동화',
+              descriptions: [
+                {
+                  content:
+                    'Tableau를 활용한 분석 대상, 주요 생산 지표 등 데이터 시각화 대시보드 구축 및 분석 환경 제공',
+                },
+                {
+                  content:
+                    '서비스 자동 재시작 스케줄링 및 리소스 실시간 모니터링 자동화 파이프라인 구축',
+                },
+                {
+                  content:
+                    'BI·RPA·SPC 등 사내 주요 시스템 서버 백업 프로세스 운영 및 시스템 안정성 확보',
+                },
+              ],
             },
           ],
-          // skillKeywords: ['Java'],
+          skillKeywords: [
+            'Java',
+            'JavaScript',
+            'Spring',
+            'MSSQL',
+            'Tableau',
+            'MyBatis',
+            'Git/Github',
+            'IntelliJ',
+          ],
         },
       ],
     },
@@ -100,7 +157,7 @@ const experience: IExperience.Payload = {
       ],
     },
     {
-      title: '(주)아카넷 서울지사',
+      title: '(주)아카넷',
       positions: [
         {
           title: '정보화사업본부 웹 개발자',

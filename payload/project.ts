@@ -5,6 +5,127 @@ const project: IProject.Payload = {
   disableTotalPeriod: false,
   list: [
     {
+      title: '차세대 TLMS(통합 시험실 관리 시스템) 구축',
+      startedAt: '26-03-16',
+      endedAt: '',
+      where: '(주)명화공업',
+      descriptions: [
+        {
+          content: '',
+          postImage:
+            'https://github.com/user-attachments/assets/b8146d6a-0993-49ff-8649-792c7e4d7917',
+        },
+        {
+          content: '연구소 맞춤형 시험실/자산 통합 관리 시스템 개발',
+          weight: 'MEDIUM',
+          descriptions: [
+            {
+              content:
+                '시험실 운영 고도화: 일별 장비 예약 시스템(캘린더 뷰) 및 미예약 장비 실시간 조회, 장비 가동률 모니터링 대시보드 구축',
+            },
+            {
+              content:
+                '자산 관리 자동화: 장비 유지보수 주기 설정 및 자동 알림 시스템, 샘플/장비별 상세 이력(시험 이력, 평가 이력, 저장 위치 등) 통합 관리 기능 구현',
+            },
+          ],
+        },
+        {
+          content: '연구소 시험팀 도입 후 수원·멕시코·인도 등 전 공장 수평 전개 예정',
+          weight: 'MEDIUM',
+        },
+        {
+          weight: 'BOLDER',
+          content: 'Skill Keywords',
+          skillKeywords: [
+            'Java',
+            'JavaScript',
+            'React',
+            'Python',
+            'Spring',
+            'MSSQL',
+            'MyBatis',
+            'Tableau',
+            'Git/Github',
+            'intelliJ',
+          ],
+        },
+      ],
+    },
+    {
+      title: '전사 통합 업무 신규 Portal 개발',
+      startedAt: '26-01-26',
+      endedAt: '26-03-31',
+      where: '(주)명화공업',
+      descriptions: [
+        {
+          content: '',
+          postImage:
+            'https://github.com/user-attachments/assets/5c3af749-adea-4859-b9f3-051423efab19',
+        },
+        {
+          content: '글로벌 전사 통합 Portal 전면 개편 및 고도화',
+          weight: 'MEDIUM',
+          descriptions: [
+            {
+              content:
+                '글로벌 11개 사업장(해외 공장 포함) 대상 노후 Portal 리뉴얼 프로젝트 전 주기 단독 리딩',
+            },
+            {
+              content:
+                '사용자 요구사항 수집부터 설계, 개발, 배포 및 전 주기 산출물(기획서, ERD, 운영 매뉴얼 등) 표준화 작업 수행',
+            },
+          ],
+        },
+        {
+          content: '풀스택 환경 구축 및 운영 파이프라인 설계',
+          weight: 'MEDIUM',
+          descriptions: [
+            {
+              content:
+                'Java/Spring Boot(Back-end) 및 React(Front-end) 기반 풀스택 시스템 구축 및 IIS 서버 배포',
+            },
+            {
+              content: '개발/운영 멀티 환경 분리 및 환경별 DB 격리를 통한 시스템 안정성 확보',
+            },
+          ],
+        },
+        {
+          content: '업무 자동화 및 데이터 시각화 도입',
+          weight: 'MEDIUM',
+          descriptions: [
+            {
+              content:
+                'Tableau를 활용한 데이터 시각화 대시보드 구축 및 사내 시스템(BI·RPA·APPSHEET) 통합 연동',
+            },
+            {
+              content:
+                'Python 스크립트를 활용해 240개 이상의 BI 대시보드 썸네일 자동 캡처 및 이관 파이프라인 구축',
+            },
+          ],
+        },
+        {
+          content: '신규 시스템 도입 후 사내 설문조사 결과, 기존 노후 시스템 대비 만족도 93% 향상',
+          weight: 'MEDIUM',
+        },
+        {
+          weight: 'BOLDER',
+          content: 'Skill Keywords',
+          skillKeywords: [
+            'Java',
+            'JavaScript',
+            'React',
+            'Python',
+            'Spring',
+            'MSSQL',
+            'MyBatis',
+            'Tableau',
+            'Git/Github',
+            'intelliJ',
+          ],
+        },
+      ],
+    },
+    {
       title: '서울기록원 디지털 아카이브 관리 시스템 고도화',
       startedAt: '25-07-01',
       endedAt: '26-01-09',
@@ -239,7 +360,7 @@ const project: IProject.Payload = {
       title: '국립 금오공과대학교 종합정보시스템 웹 개발',
       startedAt: '24-04-01',
       endedAt: '25-02-10',
-      where: '(주)아카넷 서울지사',
+      where: '(주)아카넷',
       descriptions: [
         {
           content: '',

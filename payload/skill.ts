@@ -45,6 +45,9 @@ const DB: ISkill.Skill = {
     {
       title: 'MySQL',
     },
+    {
+      title: 'MSSQL',
+    },
   ],
 };
 
@@ -78,6 +81,9 @@ const Version: ISkill.Skill = {
 const tool: ISkill.Skill = {
   category: 'IDE & Tools',
   items: [
+    {
+      title: 'Tableau',
+    },
     {
       title: 'IntelliJ',
     },

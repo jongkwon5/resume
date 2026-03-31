@@ -44,7 +44,7 @@ const profile: IProfile.Payload = {
     // },
   ],
   notice: {
-    title: '배움과 도전을 주저하지 않는, 개발자 박종권입니다.',
+    title: '비즈니스 가치를 증명하는, 3년차 개발자 박종권입니다.',
     // title: 'Status : Open to new opportunities and challenges 🙋‍♂️',
     // title: 'Status : 작성중입니다 🔧',
     icon: faBell,
