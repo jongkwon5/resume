@@ -44,6 +44,7 @@ const project: IProject.Payload = {
             'Spring',
             'MSSQL',
             'MyBatis',
+            'Jenkins',
             'Tableau',
             'Git/Github',
             'intelliJ',
@@ -52,9 +53,9 @@ const project: IProject.Payload = {
       ],
     },
     {
-      title: '전사 통합 업무 신규 Portal 개발',
+      title: '글로벌 전사 통합 비즈니스 PORTAL 구축 및 고도화',
       startedAt: '26-01-26',
-      endedAt: '26-03-31',
+      endedAt: '26-04-07',
       where: '(주)명화공업',
       descriptions: [
         {
@@ -63,16 +64,16 @@ const project: IProject.Payload = {
             'https://github.com/user-attachments/assets/5c3af749-adea-4859-b9f3-051423efab19',
         },
         {
-          content: '글로벌 전사 통합 Portal 전면 개편 및 고도화',
+          content: '글로벌 통합 PORTAL 리뉴얼 및 프로젝트 리딩',
           weight: 'MEDIUM',
           descriptions: [
             {
               content:
-                '글로벌 11개 사업장(해외 공장 포함) 대상 노후 Portal 리뉴얼 프로젝트 전 주기 단독 리딩',
+                '글로벌 11개 사업장 통합 관리: 해외 공장을 포함한 전 사업장의 노후화된 시스템을 분석하고, 차세대 통합 업무 포털로의 리뉴얼 전 과정을 단독 리딩',
             },
             {
               content:
-                '사용자 요구사항 수집부터 설계, 개발, 배포 및 전 주기 산출물(기획서, ERD, 운영 매뉴얼 등) 표준화 작업 수행',
+                '요구사항 정의부터 아키텍처 설계, 개발, 인프라 배포 및 표준 산출물(기획서, ERD, 매뉴얼 등) 수립 등 End-to-End 프로세스 수행',
             },
           ],
         },
@@ -86,6 +87,10 @@ const project: IProject.Payload = {
             },
             {
               content: '개발/운영 멀티 환경 분리 및 환경별 DB 격리를 통한 시스템 안정성 확보',
+            },
+            {
+              content:
+                'CI/CD 파이프라인 구축: 코드 변경 사항의 자동 빌드 및 배포 자동화 프로세스를 구축하여 배포 속도 개선 및 휴먼 에러 차단',
             },
           ],
         },
@@ -119,6 +124,7 @@ const project: IProject.Payload = {
             'MSSQL',
             'MyBatis',
             'Tableau',
+            'Jenkins',
             'Git/Github',
             'intelliJ',
           ],

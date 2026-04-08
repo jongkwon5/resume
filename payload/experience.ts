@@ -14,25 +14,29 @@ const experience: IExperience.Payload = {
           descriptions: [
             {
               weight: 'MEDIUM',
-              content: '전사 통합 업무 신규 Portal 개발',
+              content: '전사 통합 비즈니스 PORTAL 구축 및 고도화',
               descriptions: [
                 {
                   content:
-                    '전사 11개 사업장(해외 공장 포함) 노후 Portal 전면 개편 (기획 ~ 운영 전 과정 단독 수행)',
+                    '글로벌 11개 사업장(해외 공장 포함) 대상 노후 Portal 리뉴얼 사업의 기획부터 운영까지 전 과정 단독 수행',
                 },
                 {
                   content: 'Java/Spring Boot 활용 풀스택 개발 및 IIS 환경 배포',
                 },
                 {
-                  content:
-                    '사내 포탈 핵심 기능 구축 및 Python 스크립트 기반 BI 썸네일(240개) 자동 캡처/이관, 그룹웨어 연동',
+                  content: '소스 통합, 빌드, 배포 자동화 프로세스를 구축하여 배포 효율성 제고',
                 },
                 {
                   content:
-                    '기획서, ERD, 시스템 구성도, 운영 매뉴얼 등 프로젝트 전 주기 산출물 단독 작성',
+                    '개발/운영 환경 분리 및 DB 격리를 통해 시스템 안정성 확보, 그룹웨어 연동을 통한 업무 접근성 강화',
                 },
                 {
-                  content: '사용자 편의성 및 업무 효율성 개선으로 사용자 만족도 93% 향상',
+                  content:
+                    'Python 스크립트 기반 BI 대시보드(240개) 자동 캡처 및 데이터 이관 파이프라인 구현',
+                },
+                {
+                  content:
+                    'ERD, 시스템 구성도, 매뉴얼 등 전 주기 산출물 표준화 및 사용자 서비스 만족도 93% 향상',
                 },
               ],
             },
@@ -78,8 +82,9 @@ const experience: IExperience.Payload = {
             'JavaScript',
             'Spring',
             'MSSQL',
-            'Tableau',
             'MyBatis',
+            'Tableau',
+            'Jenkins',
             'Git/Github',
             'IntelliJ',
           ],
