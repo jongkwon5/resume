@@ -80,6 +80,8 @@ const experience: IExperience.Payload = {
           skillKeywords: [
             'Java',
             'JavaScript',
+            'Python',
+            'React',
             'Spring',
             'MSSQL',
             'MyBatis',

@@ -39,13 +39,10 @@ const project: IProject.Payload = {
           skillKeywords: [
             'Java',
             'JavaScript',
-            'React',
-            'Python',
             'Spring',
             'MSSQL',
             'MyBatis',
             'Jenkins',
-            'Tableau',
             'Git/Github',
             'intelliJ',
           ],
@@ -69,7 +66,7 @@ const project: IProject.Payload = {
           descriptions: [
             {
               content:
-                '글로벌 11개 사업장 통합 관리: 해외 공장을 포함한 전 사업장의 노후화된 시스템을 분석하고, 차세대 통합 업무 포털로의 리뉴얼 전 과정을 단독 리딩',
+                '해외 공장을 포함한 전 사업장의 노후화된 시스템을 분석하고, 차세대 통합 업무 Portal로의 리뉴얼 전 과정 단독 리딩',
             },
             {
               content:
@@ -82,15 +79,14 @@ const project: IProject.Payload = {
           weight: 'MEDIUM',
           descriptions: [
             {
-              content:
-                'Java/Spring Boot(Back-end) 및 React(Front-end) 기반 풀스택 시스템 구축 및 IIS 서버 배포',
+              content: 'Java/Spring Boot 및 React 기반 풀스택 시스템 구축 및 IIS 서버 배포',
             },
             {
               content: '개발/운영 멀티 환경 분리 및 환경별 DB 격리를 통한 시스템 안정성 확보',
             },
             {
               content:
-                'CI/CD 파이프라인 구축: 코드 변경 사항의 자동 빌드 및 배포 자동화 프로세스를 구축하여 배포 속도 개선 및 휴먼 에러 차단',
+                '코드 변경 사항의 자동 빌드 및 배포 자동화 프로세스를 구축하여 배포 속도 개선 및 휴먼 에러 차단',
             },
           ],
         },
