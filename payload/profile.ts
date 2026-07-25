@@ -44,7 +44,7 @@ const profile: IProfile.Payload = {
     // },
   ],
   notice: {
-    title: '개발부터 인프라 운영까지 전 과정을 다루는 3년차 소프트웨어 개발자 박종권입니다.',
+    title: '개발부터 인프라 운영까지, 전 과정을 다루는 3년차 소프트웨어 개발자 박종권입니다.',
     // title: 'Status : Open to new opportunities and challenges 🙋‍♂️',
     // title: 'Status : 작성중입니다 🔧',
     icon: faBell,
