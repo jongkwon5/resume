@@ -112,7 +112,7 @@ const experience: IExperience.Payload = {
                 },
                 {
                   content:
-                    '대용량 엑셀 다운로드 최적화(XSSF → SXSSF)로 생성 시간 121초 → 19초(84% 단축), 메모리 사용량 66% 절감',
+                    '대용량 엑셀 다운로드 최적화(XSSF → SXSSF)로 생성 시간 146초 → 27초(81% 단축), 메모리 사용량 66% 절감',
                 },
                 {
                   content:
