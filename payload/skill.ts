@@ -10,13 +10,13 @@ const pl: ISkill.Skill = {
       title: 'Spring',
     },
     {
-      title: 'MyBatis',
+      title: 'MyBatis/JPA',
     },
     {
-      title: 'JPA',
+      title: 'JSP/Thymeleaf',
     },
     {
-      title: 'JSP',
+      title: 'Python',
     },
   ],
 };
@@ -28,7 +28,7 @@ const Front: ISkill.Skill = {
       title: 'JavaScript',
     },
     {
-      title: 'jQuery',
+      title: 'React',
     },
     {
       title: 'HTML/CSS',
@@ -43,10 +43,10 @@ const DB: ISkill.Skill = {
       title: 'Oracle',
     },
     {
-      title: 'MySQL',
+      title: 'MSSQL',
     },
     {
-      title: 'MSSQL',
+      title: 'MySQL',
     },
   ],
 };
@@ -55,20 +55,17 @@ const devops: ISkill.Skill = {
   category: 'DevOps & CI/CD',
   items: [
     {
-      title: 'Docker',
-    },
-    {
       title: 'Jenkins',
     },
     {
       title: 'GitLab',
     },
-  ],
-};
-
-const Version: ISkill.Skill = {
-  category: 'Version Control',
-  items: [
+    {
+      title: 'Windows Server (IIS/NSSM)',
+    },
+    {
+      title: 'NHN Cloud',
+    },
     {
       title: 'Git/Github',
     },
@@ -79,35 +76,32 @@ const Version: ISkill.Skill = {
 };
 
 const tool: ISkill.Skill = {
-  category: 'IDE & Tools',
+  category: 'Tools',
   items: [
     {
       title: 'Tableau',
     },
     {
-      title: 'IntelliJ',
-    },
-    {
-      title: 'Eclipse',
-    },
-    {
       title: 'exBuilder6',
     },
-  ],
-};
-
-const etc: ISkill.Skill = {
-  category: 'Etc',
-  items: [
     {
       title: 'Tomcat',
+    },
+    {
+      title: 'Uptime Kuma',
+    },
+    {
+      title: 'Prometheus',
+    },
+    {
+      title: 'Grafana',
     },
   ],
 };
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [pl, Front, DB, devops, Version, tool, etc],
+  skills: [pl, Front, DB, devops, tool],
 };
 
 export default skill;

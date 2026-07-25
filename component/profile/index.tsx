@@ -22,8 +22,8 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
   const { image, contact, name, notice } = payload;
   return (
     <div className="mt-5">
-      <Row>
-        <Col md={3} sm={12}>
+      <Row className="profile-row">
+        <Col md={3} sm={12} className="profile-image-col">
           <ProfileImage src={image} />
         </Col>
         <Col md={9} sm={12}>
@@ -32,6 +32,27 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
           {createNoticeArea(notice)}
         </Col>
       </Row>
+      <style jsx global>{`
+        @media print {
+          .profile-row {
+            display: flex !important;
+            align-items: stretch !important;
+          }
+          .profile-image-col {
+            display: flex !important;
+          }
+          .profile-image-col > div {
+            display: flex !important;
+            width: 100%;
+          }
+          .profile-image-col img {
+            height: 100% !important;
+            width: auto !important;
+            max-height: none !important;
+            object-fit: cover !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }

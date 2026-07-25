@@ -25,6 +25,7 @@ export declare namespace IIntroduce {
     content3: string;
     content4: string;
     content5: string;
+    content6: string;
 
     /**
      * ### 하단 싸인

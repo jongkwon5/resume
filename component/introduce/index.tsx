@@ -40,9 +40,10 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
             <p>{payload.content2}</p>
             <h5> {payload.top3}</h5>
             <p>{payload.content3}</p>
-            <h5>{payload.top4}</h5>
             <p>{payload.content4}</p>
+            <h5>{payload.top4}</h5>
             <p>{payload.content5}</p>
+            <p>{payload.content6}</p>
             <p className="text-right">
               <small>Latest Updated</small>{' '}
               <Badge color="secondary">

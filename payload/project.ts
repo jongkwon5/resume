@@ -5,8 +5,8 @@ const project: IProject.Payload = {
   disableTotalPeriod: false,
   list: [
     {
-      title: '차세대 TLMS(통합 시험실 관리 시스템) 구축',
-      startedAt: '26-03-16',
+      title: '설비 알람 관리 시스템 개발',
+      startedAt: '26-05-08',
       endedAt: '',
       where: '(주)명화공업',
       descriptions: [
@@ -16,22 +16,65 @@ const project: IProject.Payload = {
             'https://github.com/user-attachments/assets/b8146d6a-0993-49ff-8649-792c7e4d7917',
         },
         {
-          content: '연구소 맞춤형 시험실/자산 통합 관리 시스템 개발',
+          content: '실시간 데이터 수집 체계 구축',
           weight: 'MEDIUM',
           descriptions: [
             {
               content:
-                '시험실 운영 고도화: 일별 장비 예약 시스템(캘린더 뷰) 및 미예약 장비 실시간 조회, 장비 가동률 모니터링 대시보드 구축',
+                '9개 라인 57대 설비(FANUC/HMI, 모드버스/PLC) 대상 3초 주기 알람·설비상태 데이터 수집',
             },
             {
               content:
-                '자산 관리 자동화: 장비 유지보수 주기 설정 및 자동 알림 시스템, 샘플/장비별 상세 이력(시험 이력, 평가 이력, 저장 위치 등) 통합 관리 기능 구현',
+                '단순 수집 데이터만으로는 알람 발생~해지 시점 추적 및 정지 원인 구분이 불가능한 문제 존재',
             },
           ],
         },
         {
-          content: '연구소 시험팀 도입 후 수원·멕시코·인도 등 전 공장 수평 전개 예정',
+          content: '알람 이력 자동화 로직 설계 (1차 개선)',
           weight: 'MEDIUM',
+          descriptions: [
+            {
+              content:
+                'DB 트리거 기반 상태 비교 로직 설계로 알람 발생~해지 이력을 실시간 자동 기록',
+            },
+            {
+              content:
+                '다수 설비 데이터가 동시에 들어오는 상황을 고려해 집합 단위 일괄 처리 방식으로 설계, 처리 지연 없이 안정적으로 대응',
+            },
+          ],
+        },
+        {
+          content: '알람-설비상태 매칭 정확도 개선 (2차 개선)',
+          weight: 'MEDIUM',
+          descriptions: [
+            {
+              content:
+                '알람과 설비상태 시점 간 ±5초 시차로 매칭률이 2%(651건)에 불과했던 문제 확인',
+            },
+            {
+              content: '사전 집계 및 시간 윈도우 매핑 구조로 전환하여 매칭 로직 재설계',
+            },
+            {
+              content:
+                '현장 방문을 통해 실제 설비 동작과 데이터 대조 검증, 매핑 오류 다수 발견 및 수정',
+            },
+          ],
+        },
+        {
+          content: '성능 개선 효과',
+          weight: 'MEDIUM',
+          descriptions: [
+            {
+              content: '알람-설비 매핑 건수 651건 → 34,187건 (약 52배 향상)',
+            },
+            {
+              content:
+                'Python 기반 배치 수집 파이프라인 구축으로 운영 개입 없는 데이터 최신성 유지',
+            },
+            {
+              content: 'React + Spring Boot 기반 웹 대시보드로 라인/설비별 알람 발생 현황 시각화',
+            },
+          ],
         },
         {
           weight: 'BOLDER',
@@ -39,12 +82,13 @@ const project: IProject.Payload = {
           skillKeywords: [
             'Java',
             'JavaScript',
+            'Python',
+            'React',
             'Spring',
             'MSSQL',
             'MyBatis',
             'Jenkins',
             'Git/Github',
-            'intelliJ',
           ],
         },
       ],
@@ -52,34 +96,34 @@ const project: IProject.Payload = {
     {
       title: '글로벌 전사 통합 비즈니스 PORTAL 구축 및 고도화',
       startedAt: '26-01-26',
-      endedAt: '26-04-07',
+      endedAt: '26-05-07',
       where: '(주)명화공업',
       descriptions: [
         {
           content: '',
           postImage:
-            'https://github.com/user-attachments/assets/5c3af749-adea-4859-b9f3-051423efab19',
+            'https://github.com/user-attachments/assets/ff79b2bc-4225-47e1-9aa5-28431469759b',
         },
         {
-          content: '글로벌 통합 PORTAL 리뉴얼 및 프로젝트 리딩',
+          content: '노후 시스템 분석 및 리뉴얼 배경',
           weight: 'MEDIUM',
           descriptions: [
             {
               content:
-                '해외 공장을 포함한 전 사업장의 노후화된 시스템을 분석하고, 차세대 통합 업무 Portal로의 리뉴얼 전 과정 단독 리딩',
+                '해외 공장을 포함한 전 사업장(11개)에서 노후화된 개별 시스템을 각자 운영 중이라, 업무 접근성 저하 및 유지보수 비효율 문제 존재',
             },
             {
               content:
-                '요구사항 정의부터 아키텍처 설계, 개발, 인프라 배포 및 표준 산출물(기획서, ERD, 매뉴얼 등) 수립 등 End-to-End 프로세스 수행',
+                '차세대 통합 업무 PORTAL로의 리뉴얼을 요구사항 정의부터 아키텍처 설계, 개발, 배포까지 전 과정 단독 리딩',
             },
           ],
         },
         {
-          content: '풀스택 환경 구축 및 운영 파이프라인 설계',
+          content: '풀스택 아키텍처 구축 (1차)',
           weight: 'MEDIUM',
           descriptions: [
             {
-              content: 'Java/Spring Boot 및 React 기반 풀스택 시스템 구축 및 IIS 서버 배포',
+              content: 'Java/Spring Boot 기반 풀스택 시스템 구축 및 IIS 서버 배포',
             },
             {
               content: '개발/운영 멀티 환경 분리 및 환경별 DB 격리를 통한 시스템 안정성 확보',
@@ -91,7 +135,7 @@ const project: IProject.Payload = {
           ],
         },
         {
-          content: '업무 자동화 및 데이터 시각화 도입',
+          content: '업무 자동화 및 데이터 시각화 확장 (2차)',
           weight: 'MEDIUM',
           descriptions: [
             {
@@ -100,13 +144,22 @@ const project: IProject.Payload = {
             },
             {
               content:
-                'Python 스크립트를 활용해 240개 이상의 BI 대시보드 썸네일 자동 캡처 및 이관 파이프라인 구축',
+                '기존 240개 이상의 BI 대시보드가 수작업 캡처·이관으로 관리되던 것을, Python 스크립트 기반 자동 캡처·이관 파이프라인으로 전환',
             },
           ],
         },
         {
-          content: '신규 시스템 도입 후 사내 설문조사 결과, 기존 노후 시스템 대비 만족도 93% 향상',
+          content: '성과',
           weight: 'MEDIUM',
+          descriptions: [
+            {
+              content: '표준 산출물(기획서, ERD, 매뉴얼 등) 수립을 통한 End-to-End 프로세스 정착',
+            },
+            {
+              content:
+                '신규 시스템 도입 후 사내 설문조사 결과, 기존 노후 시스템 대비 만족도 93% 향상',
+            },
+          ],
         },
         {
           weight: 'BOLDER',
@@ -114,7 +167,6 @@ const project: IProject.Payload = {
           skillKeywords: [
             'Java',
             'JavaScript',
-            'React',
             'Python',
             'Spring',
             'MSSQL',
@@ -122,7 +174,8 @@ const project: IProject.Payload = {
             'Tableau',
             'Jenkins',
             'Git/Github',
-            'intelliJ',
+            'Prometheus',
+            'Grafana',
           ],
         },
       ],
@@ -257,7 +310,6 @@ const project: IProject.Payload = {
             'Jenkins',
             'Git/Github',
             'GitLab',
-            'intelliJ',
           ],
         },
         {
@@ -353,7 +405,6 @@ const project: IProject.Payload = {
             'Jenkins',
             'Git/Github',
             'GitLab',
-            'intelliJ',
           ],
         },
       ],
@@ -457,16 +508,7 @@ const project: IProject.Payload = {
         {
           weight: 'BOLDER',
           content: 'Skill Keywords',
-          skillKeywords: [
-            'Java',
-            'JavaScript',
-            'Spring',
-            'Oracle',
-            'MyBatis',
-            'exBuilder6',
-            'SVN',
-            'Eclipse',
-          ],
+          skillKeywords: ['Java', 'JavaScript', 'Spring', 'Oracle', 'MyBatis', 'exBuilder6', 'SVN'],
         },
         {
           content: 'https://onekit.kumoh.ac.kr',
@@ -474,26 +516,6 @@ const project: IProject.Payload = {
         },
       ],
     },
-
-    // {
-    //   title: 'Lorem ipsum Project',
-    //   startedAt: '2016-10',
-    //   endedAt: '2017-11',
-    //   where: 'Bar Co., LTD.',
-    //   descriptions: [
-    //     { content: 'Hello Everyone' },
-    //     {
-    //       content: 'Launched Bar Service in 2018',
-    //       weight: 'MEDIUM',
-    //       descriptions: [
-    //         { content: 'Suspendisse vestibulum odio id libero facilisis gravida' },
-    //         {
-    //           content: 'In ipsum est, pellentesque vestibulum tortor eu, bibendum imperdiet metus',
-    //         },
-    //       ],
-    //     },
-    //   ],
-    // },
   ],
 };
 

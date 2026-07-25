@@ -8,7 +8,7 @@ const experience: IExperience.Payload = {
       title: '(주)명화공업',
       positions: [
         {
-          title: '디지털혁신팀 개발자',
+          title: '디지털혁신팀 소프트웨어 개발자',
           startedAt: '2026-01',
           endedAt: '',
           descriptions: [
@@ -17,62 +17,60 @@ const experience: IExperience.Payload = {
               content: '전사 통합 비즈니스 PORTAL 구축 및 고도화',
               descriptions: [
                 {
-                  content:
-                    '글로벌 11개 사업장(해외 공장 포함) 대상 노후 Portal 리뉴얼 사업의 기획부터 운영까지 전 과정 단독 수행',
-                },
-                {
-                  content: 'Java/Spring Boot 활용 풀스택 개발 및 IIS 환경 배포',
-                },
-                {
-                  content: '소스 통합, 빌드, 배포 자동화 프로세스를 구축하여 배포 효율성 제고',
+                  content: '11개 사업장(해외 포함) 대상 PORTAL 리뉴얼 기획 ~ 운영 단독 수행',
                 },
                 {
                   content:
-                    '개발/운영 환경 분리 및 DB 격리를 통해 시스템 안정성 확보, 그룹웨어 연동을 통한 업무 접근성 강화',
+                    'Java/Spring Boot 풀스택 개발, IIS 환경 배포 및 개발/운영 환경 DB 분리로 안정성 확보',
+                },
+                {
+                  content: 'Gemini API 연동 AI 분석, 자산/게시판 알림 자동화, Jenkins CI/CD 구축',
                 },
                 {
                   content:
                     'Python 스크립트 기반 BI 대시보드(240개) 자동 캡처 및 데이터 이관 파이프라인 구현',
                 },
                 {
-                  content:
-                    'ERD, 시스템 구성도, 매뉴얼 등 전 주기 산출물 표준화 및 사용자 서비스 만족도 93% 향상',
+                  content: 'ERD, 시스템 구성도, 매뉴얼 등 산출물 표준화, 사용자 만족도 93% 향상',
                 },
               ],
             },
             {
               weight: 'MEDIUM',
-              content: 'TLMS 통합 관리 시스템 개발',
+              content: '설비 알람 관리 시스템 풀스택 개발',
               descriptions: [
                 {
-                  content:
-                    '연구소 시험팀 대상 맞춤형 관리 시스템 구축 (개발 완료 후 전 공장 수평 전개 예정)',
+                  content: '6개 공장 설비 알람 실시간 통합 모니터링 시스템 구축',
                 },
                 {
                   content:
-                    '시험실 관리 기능 구축 : 일별 장비 예약, 미예약 장비 조회, 실시간 모니터링 기능 구현',
+                    '9개 라인 57대 설비(FANUC/HMI·모드버스/PLC) 대상 실시간 데이터 수집 체계 구축, 3초 주기 알람/설비상태 수집',
+                },
+                {
+                  content: 'DB 트리거 기반 실시간 알람/설비상태 변화 자동 캡처 로직 설계',
                 },
                 {
                   content:
-                    '자산 관리 기능 고도화 : 장비 유지보수 주기 자동 알림, 장비·샘플 정보 열람 기능 개발',
+                    '±5초 시차 매칭 문제를 사전 집계 테이블로 해결 — 매핑 651건 → 34,187건(52배)',
+                },
+                {
+                  content: 'Python 배치 수집 파이프라인 구축으로 운영 개입 없는 데이터 최신성 유지',
                 },
               ],
             },
             {
               weight: 'MEDIUM',
-              content: 'Tableau 데이터 시각화 및 시스템 자동화',
+              content: '서버 이중화 및 인프라 운영 고도화',
               descriptions: [
                 {
-                  content:
-                    'Tableau를 활용한 분석 대상, 주요 생산 지표 등 데이터 시각화 대시보드 구축 및 분석 환경 제공',
+                  content: 'Windows 서비스 운영, 서버 5대 백업 자동화, 자산 DB 일원화',
                 },
                 {
                   content:
                     '서비스 자동 재시작 스케줄링 및 리소스 실시간 모니터링 자동화 파이프라인 구축',
                 },
                 {
-                  content:
-                    'BI·RPA·SPC 등 사내 주요 시스템 서버 백업 프로세스 운영 및 시스템 안정성 확보',
+                  content: '외부 협력사 접속용 NHN Cloud 서버 구축/운영',
                 },
               ],
             },
@@ -88,7 +86,9 @@ const experience: IExperience.Payload = {
             'Tableau',
             'Jenkins',
             'Git/Github',
-            'IntelliJ',
+            'NHN Cloud',
+            'Prometheus',
+            'Grafana',
           ],
         },
       ],
