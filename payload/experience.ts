@@ -24,7 +24,8 @@ const experience: IExperience.Payload = {
                     'Java/Spring Boot 풀스택 개발, IIS 환경 배포 및 개발/운영 환경 DB 분리로 안정성 확보',
                 },
                 {
-                  content: 'Gemini API 연동 AI 분석, 자산/게시판 알림 자동화, Jenkins CI/CD 구축',
+                  content:
+                    'Gemini API + 로컬 LLM 연동 AI 분석, 자산/게시판 알림 자동화, Jenkins CI/CD 구축',
                 },
                 {
                   content:
@@ -40,7 +41,7 @@ const experience: IExperience.Payload = {
               content: '설비 알람 관리 시스템 풀스택 개발',
               descriptions: [
                 {
-                  content: '6개 공장 설비 알람 실시간 통합 모니터링 시스템 구축',
+                  content: '3개 공장 설비 알람 실시간 통합 모니터링 시스템 구축',
                 },
                 {
                   content:

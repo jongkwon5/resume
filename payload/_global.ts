@@ -3,7 +3,7 @@ import previewImage from '../asset/profile_2.jpg';
 import { IGlobal } from '../component/common/IGlobal';
 
 const title = 'Resume - Jongkwon Park';
-const description = '차곡차곡 쌓아온 경험과 성장의 기록 - by Jongkwon Park';
+const description = '차곡차곡 쌓아온 경험과 성장의 기록';
 
 export const _global: IGlobal.Payload = {
   favicon,
