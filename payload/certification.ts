@@ -5,6 +5,11 @@ const Certification: ICertification.Payload = {
 
   list: [
     {
+      title: 'ADsP(데이터분석 준전문가)',
+      subTitle: '한국데이터산업진흥원',
+      at: '26-11-20',
+    },
+    {
       title: '리눅스마스터 2급',
       subTitle: '한국정보통신진흥협회',
       at: '26-01-02',
